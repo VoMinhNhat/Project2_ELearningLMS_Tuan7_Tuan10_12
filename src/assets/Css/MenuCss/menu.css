@@ -1,0 +1,117 @@
+
+.mainMenu{
+    z-index: 99;
+    position: relative;
+    background-color: #FF7506;
+    height: 850px;
+    width: 90px;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Css Cho Biểu Tượng Của Trang Web */
+.webSymbol{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    background: none;
+    background-size: 100% 100%;
+    width: 70px;
+    height: 40px;
+}
+
+/* Css Menu Chính */
+.mainMenuUl{
+    position: absolute;
+    top: 18%;
+    left: 7%;
+    display: block;
+    list-style: none;
+}
+
+.mainMenuLi{
+    cursor: pointer;
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: -36px;
+    line-height: 70px;
+    font-size: 30px;
+    color: white;
+}
+
+.mainMenu:hover .suppMenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.mainMenuLi:hover{
+    background-color: rgb(255, 199, 154, 0.5);
+}
+
+/* Css Cho Menu Phụ */
+.suppMenu{
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    position: absolute;
+    height: 850px;
+    width: 250px;
+    left: 100%;
+    opacity: 0;
+    transition: 0.1s;
+}
+.suppMenuUl{
+    list-style-type: none;
+    margin-top: 75%;
+}
+
+.suppMenuLi{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #464647;
+}
+
+.suppMenuUl .suppMenuLi:hover{
+    color: #FF7506;
+}
+
+.suppMenuUl .suppMenuLi:hover .notImport{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Không quang trọng */
+.notImport{
+    background-color: #FF7506;
+    opacity: 0;
+    visibility: hidden;
+    float: right;
+    width: 5px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Css cho phần danh mục  */
+.smallMenuLi{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: -19%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    color: #373839;
+}
+
+.smallMenuLi:hover{
+    color: black;
+    background: #F0F3F6;
+    font-weight: 700;
+}

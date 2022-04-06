@@ -1,0 +1,30 @@
+.cacKhoaHoc{
+    width: 764px;
+    height: 760px;
+    margin-top: -748px;
+    margin-left: 733px;
+}
+
+.titleTatCaKhoaHoc{
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Css Cho Collapse */
+.anticon svg{
+    color: #ff811b !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    transition: 0.2s !important;
+}
+
+.ant-collapse-item:hover{
+    background-color: #ff811b !important;
+}
+.ant-collapse-item:hover .anticon svg{
+    color: #FFFF !important;
+}
+.ant-collapse-item:hover .ant-collapse-header{
+    color: #FFFF !important;
+}

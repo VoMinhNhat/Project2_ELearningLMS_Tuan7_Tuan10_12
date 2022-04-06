@@ -1,0 +1,152 @@
+.logInCss{
+    position: relative;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 850px;
+}
+
+/* Css cha */
+.logInCha{
+    position: absolute;
+    top: 23%;
+    left: 65%;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    height: 453px;
+    width: 370px;
+}
+
+/* Css Cho Tiêu Đề */
+.titleLogin{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+/* Css Cho Phần Tên Đăng Nhập*/
+.titleTenDangNhap{
+    margin-top: 18%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #373839;
+}
+
+.inputAccount{
+    margin-top: 2%;
+    background-color: #F2F2F2;
+    border: none;
+    outline: none;
+    width: 85%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 33px;
+    padding-right: 20px;
+}
+
+.inputAccount:focus{
+    background: white;
+    border: 2px solid #373839;
+}
+
+/* Css Cho Icon của user */
+
+.iconUser{
+    position: absolute;
+    top: 33%;
+    left: 2%;
+    font-size: 18px;
+    color: #C9C4C0;
+}
+
+
+/* Css Cho Phần Mật Khẩu */
+.titleMatKhau{
+    margin-top: 5%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #373839;
+}
+
+.inputPass{
+    margin-top: 2%;
+    background-color: #F2F2F2;
+    border: none;
+    outline: none;
+    width: 85%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 33px;
+    padding-right: 20px;
+}
+
+.inputPass:focus{
+    background: white;
+    border: 2px solid #373839;
+}
+
+/* Css Cho Phần icon Pass */
+
+.iconPass{
+    position: absolute;
+    top: 52%;
+    left: 2%;
+    color: #C9C4C0;
+}
+
+/*Css Cho Buttton Quên Mật Khẩu */
+
+.btn-forgot-pass{
+    margin-top: 3%;
+    margin-left: 69%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: #FF7506;
+}
+
+/*Css Cho Buttton Quay Lại Trang Chủ */
+
+.btn-come-back{
+    margin-top: 3%;
+    margin-left: 58%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: #FF7506;
+}
+
+/* Css Cho Button Đăng Nhập */
+.btn-login{
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+    border: none;
+    border-radius: 5px;
+    margin-top: 35px;
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Css Cho Button Cấp LẠi Mật Khẩu */
+.btn-new-pass{
+    background: #C9C4C0;
+    border: none;
+    border-radius: 5px;
+    margin-top: 35px;
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.btn-new-pass:hover{
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+}
