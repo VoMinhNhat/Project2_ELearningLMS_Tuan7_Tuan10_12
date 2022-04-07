@@ -11,20 +11,66 @@
     margin-bottom: 25px;
 }
 
+.inforHocKy{
+    height: 681px;
+    overflow: scroll;
+    padding-top: 20px;
+}
+
+.inforHocKy::-webkit-scrollbar {
+    display: none;
+}
+
 /* Css Cho Collapse */
-.anticon svg{
+.cacKhoaHoc  .inforHocKy  .anticon svg{
     color: #ff811b !important;
     font-size: 20px !important;
-    font-weight: 800 !important;
     transition: 0.2s !important;
 }
 
-.ant-collapse-item:hover{
+.cacKhoaHoc  .inforHocKy .ant-collapse-item:hover{
     background-color: #ff811b !important;
 }
-.ant-collapse-item:hover .anticon svg{
+.cacKhoaHoc  .inforHocKy .ant-collapse-item:hover .anticon svg{
     color: #FFFF !important;
 }
-.ant-collapse-item:hover .ant-collapse-header{
+.cacKhoaHoc  .inforHocKy .ant-collapse-item:hover .ant-collapse-header{
     color: #FFFF !important;
+}
+
+.cacKhoaHoc  .inforHocKy .ant-collapse-header{
+    font-weight: 700 !important;
+}
+
+/* Css Cho Table */
+.cacKhoaHoc  .inforHocKy thead > tr {
+    display: none !important;
+  }
+
+  .cacKhoaHoc  .inforHocKy .ant-pagination {
+    display: none !important;
+}
+
+
+/* Css Cho Chi Tiet Trong Table*/
+.chuaHoanThanh{
+    color: red;
+}
+
+ .daHoanThanh{
+    color: lightgreen;
+}
+
+.iconThongTin{
+    color:#ff811b;
+    font-size: 23px;
+}
+
+.cacKhoaHoc  .inforHocKy .ant-table-tbody > tr:nth-child(even){
+    background-color: #F7F8FB;
+}
+
+.cacKhoaHoc  .inforHocKy .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
 }

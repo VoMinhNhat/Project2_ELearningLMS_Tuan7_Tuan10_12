@@ -8,6 +8,7 @@ import { Dangnhap } from './components/LogIn/Dangnhap';
 import { Menu } from './components/Menu/Menu';
 import { Logout } from './components/LogIn/Logout';
 import { TongQuat } from './components/Students/TongQuan/TongQuat';
+import { DanhSachLop } from './components/Students/LopHocCuaToi/DanhSachLopHoc/DanhSachLopHoc';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
 
       <Logout/>
 
-      <TongQuat/>
+      {/* <TongQuat/> */}
+
+      <DanhSachLop/>
 
     </div>
   );

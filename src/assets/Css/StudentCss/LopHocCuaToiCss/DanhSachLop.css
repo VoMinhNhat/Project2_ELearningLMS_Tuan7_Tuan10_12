@@ -1,0 +1,242 @@
+.danhSachLopHoc{
+    background-size: 100% 100%;
+    height: 850px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.titleDanhSachLop{
+    position: absolute;
+    left: 8%;
+    top: 7%;
+    font-size: 37px;
+    font-weight: 700;   
+}
+
+.cacDanhSach{
+    width: 90%;
+    height: 710px;
+    margin-top: 8%;
+    margin-left: 8%;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25); 
+    border-radius: 15px;
+}
+
+/* Css Cho Các Tabs*/
+.danhSachLopHoc .cacDanhSach .ant-tabs-tab{
+    border-top: 2px solid #F17F21 !important;
+    border-left: 2px solid #F17F21 !important;
+    border-right: 2px solid #F17F21 !important;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 700 !important;
+    padding: 0 !important;
+    text-align: center;
+    display: inline-block !important;
+}
+
+.danhSachLopHoc .cacDanhSach .ant-tabs-tab-active{
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%) !important;
+    width: 180px;
+    height: 60px;
+}
+
+.danhSachLopHoc .cacDanhSach .ant-tabs-tab-active > .ant-tabs-tab-btn{
+    color: white !important;
+}
+
+.danhSachLopHoc .cacDanhSach .ant-tabs-tab:hover {
+    color: black !important;
+}
+
+.danhSachLopHoc .cacDanhSach .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar {
+    bottom: 0;
+    background-color: white;
+    opacity: 0 !important;
+}
+
+.danhSachLopHoc .cacDanhSach .ant-tabs-content-holder{
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25); 
+    background-color: white;
+    margin-top: -15px;
+    border-radius: 15px;
+    height: 650px !important;
+}
+
+/* Css Cho Các Table */
+.cacTable{
+    display: flex;
+}
+
+/* Css cho niên khóa*/
+.nienKhoa{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.nienKhoa h4{
+    font-weight: 700;
+}
+.nienKhoa .ant-select-arrow{
+    color: #F17F21 !important;
+}
+
+.nienKhoa .ant-select-selector{
+    border-radius: 5px !important;
+    border: 1px solid #373839 !important;
+}
+
+.nienKhoa .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+}
+
+/* Css cho Chọn ngày */
+.chonNgay{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.chonNgay h4{
+    font-weight: 700;
+}
+
+.ant-picker-next-icon{
+    color: #F17F21 ;
+} 
+.ant-picker-prev-icon{
+    color: #F17F21;
+} 
+
+.ant-picker-month-btn:hover, .ant-picker-year-btn:hover{
+    color: #F17F21 !important;
+}
+
+.ant-picker-content th{
+    color:  #0B80EC !important;
+    font-weight: 700 !important;
+}
+
+.ant-picker-cell-in-view .ant-picker-cell-inner:hover{
+    background-color: #ff9946 !important;
+    border-radius: 12px;
+    color: White !important;
+    font-weight: 600;
+}
+.ant-picker-panel-container{
+    border-radius: 10px !important;
+}
+.ant-picker-cell-inner{
+    background: none !important;
+    color: black !important;
+}
+.ant-picker-cell-inner::before{
+    background: rgba(255, 115, 0, 0.2);
+    border-radius: 12px !important;
+    border: none !important;
+}
+.anticon{
+    color: #ffa45a !important;
+}
+
+
+/* Css cho chọn môn */
+.chonMonHoc{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.chonMonHoc h4{
+    font-weight: 700;
+}
+.chocMonHoc .ant-select-arrow{
+    color: #F17F21 !important;
+}
+
+.chonMonHoc .ant-select-selector{
+    border-radius: 5px !important;
+    border: 1px solid #373839 !important;
+}
+
+.chonMonHoc .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+}
+
+/* Các button cho table */
+.btn-locketqua{
+    margin-top: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-locketqua:active{
+    background-color: #FF7506;
+    color: white;
+}
+.btn-locketqua:focus{
+    background-color: #FF7506;
+    color: white;
+}
+
+/* Css cho tìm kiếm */
+.inputTimKiemTopic{
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    background-color: #EFEFEF;
+    height: 35px;
+    width: 315px;
+    margin-top: 38px;
+    margin-left: 19%;
+    font-size: 12px;
+    font-style: italic;
+    color: #676767;
+    padding-left: 33px;
+    padding-right: 20px;
+}
+
+.iconTimKiemTheoToppic{
+    position: absolute;
+    top: 228px;
+    left: 1160px;
+}
+
+/* Css Cho Các Table */
+.tableDanhSach{
+    position: absolute;
+    top: 270px;
+    left: 145px;
+    width: 1323px;
+    height: 550px;
+}
+
+.tableDanhSach .ant-table-thead > tr >th{
+    background-color: #F17F21;
+    border-radius: 5px 5px 0 0;
+    font-weight: 700 !important;
+    padding-top: 7px ;
+    padding-bottom: 7px;
+    color: white;
+}
+
+.tableDanhSach .ant-table-tbody > tr:nth-child(even){
+    background-color: #f2f2f5;
+}
+.tableDanhSach .ant-table-tbody .ant-table-row .ant-table-cell{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    font-weight: 500 !important;
+    font-size: 12px;
+}
+
+.tableDanhSach .ant-pagination .ant-table-pagination .ant-table-pagination-right{
+    margin-top: 50px;
+}
