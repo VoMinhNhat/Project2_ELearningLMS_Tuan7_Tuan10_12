@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 
@@ -9,6 +8,7 @@ import { Menu } from './components/Menu/Menu';
 import { Logout } from './components/LogIn/Logout';
 import { TongQuat } from './components/Students/TongQuan/TongQuat';
 import { DanhSachLop } from './components/Students/LopHocCuaToi/DanhSachLopHoc/DanhSachLopHoc';
+import { ThongTinLopHoc } from './components/Students/ThongTinLopHoc/ThongTinLopHoc';
 
 function App() {
   return (
@@ -22,7 +22,9 @@ function App() {
 
       {/* <TongQuat/> */}
 
-      <DanhSachLop/>
+      {/* <DanhSachLop/> */}
+
+      <ThongTinLopHoc/>
 
     </div>
   );

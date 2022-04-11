@@ -1,0 +1,89 @@
+.thongTinLopHoc{
+    position: absolute;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 850px;
+}
+
+/* Css Cho Daấu  trang */
+.dauTrang{
+    display: flex;
+    position: absolute;
+    top: 44px;
+    left: 130px;
+    width: 450px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.quanLyLop{
+    font-size: 14px;
+    font-weight: 600;
+    color: #C9C4C0;
+}
+
+.dauTrangThongTin{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #C9C4C0;
+}
+
+.tenLopHoc{
+    margin-left: 10px;
+    font-size: 33px;
+    font-weight: 700;
+    color: #141414;
+}
+
+.iconDauTrang{
+    margin-left: 10px;
+    padding-top: 2px;
+    color: #FF7506;
+}
+
+/*Css Cho Các Tabs*/
+.tabThongTinLopHoc{
+    position: absolute;
+    left: 130px;
+    top: 87px;
+    height: 750px;
+    width: 1360px;
+}
+
+/*Css Cho Tabs Lớn*/
+.tabThongTinLopHoc .ant-tabs-nav-list{
+    background-color: #F2F2F2;
+    width: 400px;
+    height: 32px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.tabThongTinLopHoc .ant-tabs-tab .ant-tabs-tab-btn{
+    text-align: center;
+    width: 170px;
+    color: #939a9a !important;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.tabThongTinLopHoc .ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: #ffffff !important;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 15px;
+    width: 180px;
+    transition: 0.2s;
+}
+
+.tabThongTinLopHoc .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar{
+    opacity: 0 !important;
+}
+
+.tabThongTinLopHoc .ant-tabs-content-holder{
+    height: 710px;
+}

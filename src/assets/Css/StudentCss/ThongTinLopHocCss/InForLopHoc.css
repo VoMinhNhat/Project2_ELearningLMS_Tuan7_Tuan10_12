@@ -1,0 +1,300 @@
+.InForLopHoc{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    margin-left: 20px;
+    height: 690px;
+    width: 1325px;
+    border-radius: 10px;
+}
+
+.btn-ThamGiaLopHoc{
+    cursor: pointer;
+    background-color: #FF7506;
+    border: none;
+    height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+
+/*Css Cho Phần Header trong Infor Lớp Học */
+.HeadInFor{
+    display: flex;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    border-radius: 10px 10px 0 0;
+}
+
+.avatar-HeadInFor{
+    background-size: 100% 100%;
+    height: 90px;
+    width: 90px;
+    margin-top: 1%;
+    margin-left: 30px;
+    border-radius: 50px;
+}
+
+.straingLine{
+    background-color: #C9C4C0;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 1px;
+    height: 75px;
+}
+
+.TeacherAndSubject{
+    background-color:rgb(255, 255, 255);
+    color: #68696a;
+    padding-top: 10px;
+    height: 85px;
+    width: 180px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.TeacherAndSubject h4{
+    color: #515253;
+}
+
+.MoTaAndClass{
+    background-color: rgb(255, 255, 255);
+    color: #68696a;
+    padding-top: 10px;
+    width: 870px;
+    height: 85px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.MoTaAndClass h4{
+    color: #515253;
+}
+
+/*Css Cho Phần Body trong Infor Lớp Học */
+.BodyInFor{
+    z-index: 88;
+    position: relative;
+    top: 120px;
+    background-color: #F0F3F6;
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+    padding-left: 23%;
+}
+.lichhoc-BodyInfor{
+    margin-bottom: 7px;
+    color: #7b7d7e;
+    line-height: 30px;
+    height: 30px;
+    width: 500px;
+    display: flex;
+}
+.thoiluong-BodyInfor{
+    margin-bottom: 7px;
+    color: #7b7d7e;
+    line-height: 30px;
+    height: 30px;
+    width: 500px;
+    display: flex;
+}
+.batdau-BodyInfor{
+    margin-bottom: 7px;
+        color: #7b7d7e;
+        line-height: 30px;
+        height: 30px;
+        width: 500px;
+        display: flex;
+}
+
+.ketthuc-BodyInfor{
+    margin-bottom: 7px;
+    color: #7b7d7e;
+    line-height: 30px;
+    height: 30px;
+    width: 500px;
+    display: flex;
+}
+
+.buoihoc-BodyInFor{
+    align-items: center;
+    display: flex;
+    padding-top: 12px;
+    margin-top: 10px;
+    width: 800px;
+    height: 120px;
+}
+
+.buoihoc-BodyInFor .buoihocxam{
+    margin-left: 15px;
+    border-radius: 15px;
+    height: 95px;
+    width: 95px;
+    background-color: #C9C4C0;
+}
+
+.buoihocxam .buoihoc{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #C9C4C0;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: 10%;
+    height: 20px;
+    width: 65px;
+    background: white;
+}
+
+.buoihoc-BodyInFor .buoihoccam{
+    margin-left: 15px;
+    border-radius: 15px;
+    height: 95px;
+    width: 95px;
+    background-color: #FF7506;
+}
+
+.buoihoccam .buoihoc{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FF7506;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: 10%;
+    height: 20px;
+    width: 65px;
+    background: white;
+}
+
+.buoihoc-BodyInFor .buoihocxanh{
+    margin-left: 15px;
+    border-radius: 15px;
+    height: 95px;
+    width: 95px;
+    background-color: #0B80EC;
+}
+
+.buoihocxanh .buoihoc{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #0B80EC;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: 10%;
+    height: 20px;
+    width: 65px;
+    background: white;
+}
+
+
+.ngayhoc{
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.giohoc{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    margin-left: 6%;
+}
+
+/*Css Cho Phần Footer trong Infor Lớp Học */
+.FooterInFor{
+    margin-top: 120px;
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 23%;
+    width: 100%;
+    height: 220px;
+}
+
+.malop-Footerinfor{
+    margin-bottom: 10px;
+    color: #7b7d7e;
+    line-height: 30px;
+    height: 30px;
+    width: 500px;
+    display: flex;
+}
+
+.baomat-Footerinfor{
+    margin-bottom: 10px;
+    color: #7b7d7e;
+    line-height: 30px;
+    height: 30px;
+    width: 500px;
+    display: flex;
+}
+.inputBaoMat-Footer{
+    outline: none;
+    border: 2px solid #cdcdcd;
+    margin-top: 3px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    margin-left: 110px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.iconbaomat{
+    color: #FF7506;
+    position: absolute;
+    left: 750px;
+    top: 474px;
+}
+
+.linkchise-Footerinfor{
+    margin-bottom: 10px;
+    color: #7b7d7e;
+    line-height: 30px;
+    height: 30px;
+    width: 800px;
+    display: flex;
+}
+
+.inputLinkShare-Footer{
+    outline: none;
+    border: 2px solid #cdcdcd;
+    margin-top: 3px;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    margin-left: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+}
+.btn-LinkShare{
+    background-color: #FF7506;
+    cursor: pointer;
+    border: none;
+    margin-top: 3px;
+    margin-left: 20px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.caidatkhac-Footerinfor{
+    margin-bottom: 10px;
+    color: #7b7d7e;
+    line-height: 30px;
+    height: 30px;
+    width: 800px;
+    display: flex;
+}
+
+
