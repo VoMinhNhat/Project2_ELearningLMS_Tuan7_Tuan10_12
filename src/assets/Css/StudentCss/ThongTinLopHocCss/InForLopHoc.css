@@ -120,92 +120,122 @@
     display: flex;
 }
 
-.buoihoc-BodyInFor{
-    align-items: center;
-    display: flex;
-    padding-top: 12px;
-    margin-top: 10px;
-    width: 800px;
+#main-sliders-buoihoc{
+    width: 87%;
     height: 120px;
 }
 
-.buoihoc-BodyInFor .buoihocxam{
-    margin-left: 15px;
-    border-radius: 15px;
-    height: 95px;
-    width: 95px;
-    background-color: #C9C4C0;
+#slider{
+    padding-left: 4%;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
-.buoihocxam .buoihoc{
-    text-align: center;
-    font-size: 12px;
+#slider::-webkit-scrollbar{
+    display: none;
+}
+
+#main-sliders-buoihoc{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider-icon.left, .slider-icon.right{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.slider-icon .left{
+    left: 0;
+}
+
+.slider-icon.right{
+    right: 0;
+}
+
+.slider-card-grey{
+    width: 100px;
+    height: 100px;
+    background: #C9C4C0 ;
+    border-radius: 12px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.slider-card-grey .buoihoc{
+    background-color: white;
+    height: 25px;
+    width: 77%;
+    margin-left: 12px;
+    margin-top: 10px;
+    border-radius: 15px;
     font-weight: 700;
     color: #C9C4C0;
-    border-radius: 10px;
-    margin-left: 15%;
-    margin-top: 10%;
-    height: 20px;
-    width: 65px;
-    background: white;
-}
-
-.buoihoc-BodyInFor .buoihoccam{
-    margin-left: 15px;
-    border-radius: 15px;
-    height: 95px;
-    width: 95px;
-    background-color: #FF7506;
-}
-
-.buoihoccam .buoihoc{
     text-align: center;
-    font-size: 12px;
+}
+
+.slider-card-orange{
+    width: 100px;
+    height: 100px;
+    background: #FF7506;
+    border-radius: 12px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.slider-card-orange .buoihoc{
+    background-color: white;
+    height: 25px;
+    width: 77%;
+    margin-left: 12px;
+    margin-top: 10px;
+    border-radius: 15px;
     font-weight: 700;
     color: #FF7506;
-    border-radius: 10px;
-    margin-left: 15%;
-    margin-top: 10%;
-    height: 20px;
-    width: 65px;
-    background: white;
-}
-
-.buoihoc-BodyInFor .buoihocxanh{
-    margin-left: 15px;
-    border-radius: 15px;
-    height: 95px;
-    width: 95px;
-    background-color: #0B80EC;
-}
-
-.buoihocxanh .buoihoc{
     text-align: center;
-    font-size: 12px;
+}
+
+.slider-card-blue{
+    width: 100px;
+    height: 100px;
+    background: #0B80EC;
+    border-radius: 12px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.slider-card-blue .buoihoc{
+    background-color: white;
+    height: 25px;
+    width: 77%;
+    margin-left: 12px;
+    margin-top: 10px;
+    border-radius: 15px;
     font-weight: 700;
     color: #0B80EC;
-    border-radius: 10px;
-    margin-left: 15%;
-    margin-top: 10%;
-    height: 20px;
-    width: 65px;
-    background: white;
+    text-align: center;
 }
-
 
 .ngayhoc{
-    font-size: 13px;
-    font-weight: 700;
     color: white;
-    margin-left: 15%;
-    margin-top: 5%;
-}
-
-.giohoc{
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.giohoc{
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 4px;
     color: white;
-    margin-left: 6%;
 }
 
 /*Css Cho Phần Footer trong Infor Lớp Học */

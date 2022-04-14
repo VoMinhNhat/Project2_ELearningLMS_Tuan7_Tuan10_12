@@ -1,5 +1,6 @@
+import React from 'react';
 import { DatePicker, Space, TimePicker } from 'antd';
-import {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai';
+import {MdChevronLeft, MdChevronRight} from 'react-icons/md';
 
 //Date picker
 function ngayKetThuc(date:any, dateString:any) {
@@ -10,7 +11,21 @@ function chonGioKetThuc(time:any, timeString:any) {
     console.log(time, timeString);
   }
 
-export const BodyInFor = () =>{
+// Slider
+
+
+export const BodyInFor = (props: any) =>{
+
+    // const slideLeft =()=>{
+    //     var slider = document.getElementById("slider")
+    //     slider?.scrollLeft = slider?.scrollLeft + 500;
+    // }
+
+    // const slideRight =()=>{
+    //     var slider = document.getElementById("slider")
+    //     slider?.scrollLeft = slider?.scrollLeft - 500;
+    // }
+
     return (
         <div className="BodyInFor">
 
@@ -41,55 +56,63 @@ export const BodyInFor = () =>{
                 </div>
             </div>
 
-            <div className='buoihoc-BodyInFor'>
+            {/*Card slider*/}
 
-                <AiOutlineLeft style={{color: '#FF7506', fontSize:'15px', marginRight:'-10px'}}/>
+            <div id='main-sliders-buoihoc'>
 
-                <div className='buoihocxam'>
-                    <div className='buoihoc'>buổi 1</div>
-                    <div className='ngayhoc'>19/8/2020</div>
-                    <div className='giohoc'>14:00-14:45</div>
+                <MdChevronLeft size={25} color={'#FF7506'} className='slider-icon left'/>
+                
+                <div id='slider'>
+
+                    <div className='slider-card-grey'>
+                        <div className='buoihoc'> Buổi 1 </div>
+                        <div className='ngayhoc'>19/08/2020</div>
+                        <div className='giohoc'>14:00-14:45</div>
+                    </div>
+
+                    <div className='slider-card-orange'>
+                        <div className='buoihoc'> Buổi 2 </div>
+                        <div className='ngayhoc'>19/08/2020</div>
+                        <div className='giohoc'>14:00-14:45</div>
+                    </div>
+
+                    <div className='slider-card-blue'>
+                        <div className='buoihoc'> Buổi 3 </div>
+                        <div className='ngayhoc'>19/08/2020</div>
+                        <div className='giohoc'>14:00-14:45</div>
+                    </div>
+
+                    <div className='slider-card-blue'>
+                        <div className='buoihoc'> Buổi 4 </div>
+                        <div className='ngayhoc'>19/08/2020</div>
+                        <div className='giohoc'>14:00-14:45</div>
+                    </div>
+
+                    <div className='slider-card-blue'>
+                        <div className='buoihoc'> Buổi 5 </div>
+                        <div className='ngayhoc'>19/08/2020</div>
+                        <div className='giohoc'>14:00-14:45</div>
+                    </div>
+
+                    <div className='slider-card-blue'>
+                        <div className='buoihoc'> Buổi 6 </div>
+                        <div className='ngayhoc'>19/08/2020</div>
+                        <div className='giohoc'>14:00-14:45</div>
+                    </div>
+
+                    <div className='slider-card-blue'>
+                        <div className='buoihoc'> Buổi 7 </div>
+                        <div className='ngayhoc'>19/08/2020</div>
+                        <div className='giohoc'>14:00-14:45</div>
+                    </div>
+
                 </div>
 
-                <div className='buoihoccam'>
-                    <div className='buoihoc'>buổi 2</div>
-                    <div className='ngayhoc'>19/8/2020</div>
-                    <div className='giohoc'>14:00-14:45</div>
-                </div>
-
-                <div className='buoihocxanh'>
-                    <div className='buoihoc'>buổi 3</div>
-                    <div className='ngayhoc'>19/8/2020</div>
-                    <div className='giohoc'>14:00-14:45</div>
-                </div>
-
-                <div className='buoihocxanh'>
-                    <div className='buoihoc'>buổi 4</div>
-                    <div className='ngayhoc'>19/8/2020</div>
-                    <div className='giohoc'>14:00-14:45</div>
-                </div>
-
-                <div className='buoihocxanh'>
-                    <div className='buoihoc'>buổi 5</div>
-                    <div className='ngayhoc'>19/8/2020</div>
-                    <div className='giohoc'>14:00-14:45</div>
-                </div>
-
-                <div className='buoihocxanh'>
-                    <div className='buoihoc'>buổi 6</div>
-                    <div className='ngayhoc'>19/8/2020</div>
-                    <div className='giohoc'>14:00-14:45</div>
-                </div>
-
-                <div className='buoihocxanh'>
-                    <div className='buoihoc'>buổi 7</div>
-                    <div className='ngayhoc'>19/8/2020</div>
-                    <div className='giohoc'>14:00-14:45</div>
-                </div>
-
-                <AiOutlineRight style={{color: '#FF7506', fontSize:'15px', marginLeft: '5px'}}/>
-
+                <MdChevronRight size={25} color={'#FF7506'} className='slider-icon right'/>
+                
             </div>
+
+            
 
         </div>
     )

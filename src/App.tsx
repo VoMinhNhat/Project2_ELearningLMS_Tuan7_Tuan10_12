@@ -9,6 +9,7 @@ import { Logout } from './components/LogIn/Logout';
 import { TongQuat } from './components/Students/TongQuan/TongQuat';
 import { DanhSachLop } from './components/Students/LopHocCuaToi/DanhSachLopHoc/DanhSachLopHoc';
 import { ThongTinLopHoc } from './components/Students/ThongTinLopHoc/ThongTinLopHoc';
+import { ThamGiaLopHoc } from './components/Students/LopHocCuaToi/ThamGiaLopHoc/ThamGiaLopHoc';
 
 function App() {
   return (
@@ -24,8 +25,9 @@ function App() {
 
       {/* <DanhSachLop/> */}
 
-      <ThongTinLopHoc/>
+      {/* <ThongTinLopHoc/> */}
 
+      <ThamGiaLopHoc/>
     </div>
   );
 }

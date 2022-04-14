@@ -52,7 +52,7 @@
 }
 
 /*Css Cho Tabs Lớn*/
-.tabThongTinLopHoc .ant-tabs-nav-list{
+.thongTinLopHoc .tabThongTinLopHoc .ant-tabs-nav-list{
     background-color: #F2F2F2;
     width: 400px;
     height: 32px;
@@ -60,7 +60,7 @@
     padding-left: 10px;
 }
 
-.tabThongTinLopHoc .ant-tabs-tab .ant-tabs-tab-btn{
+.thongTinLopHoc .tabThongTinLopHoc .ant-tabs-tab .ant-tabs-tab-btn{
     text-align: center;
     width: 170px;
     color: #939a9a !important;
@@ -69,7 +69,7 @@
     border-radius: 15px;
 }
 
-.tabThongTinLopHoc .ant-tabs-tab-active .ant-tabs-tab-btn{
+.thongTinLopHoc .tabThongTinLopHoc .ant-tabs-tab-active .ant-tabs-tab-btn{
     color: #ffffff !important;
     text-align: center;
     background-color: rgb(0, 0, 0);
@@ -80,10 +80,10 @@
     transition: 0.2s;
 }
 
-.tabThongTinLopHoc .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar{
+.thongTinLopHoc .tabThongTinLopHoc .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar{
     opacity: 0 !important;
 }
 
-.tabThongTinLopHoc .ant-tabs-content-holder{
+.thongTinLopHoc .tabThongTinLopHoc .ant-tabs-content-holder{
     height: 710px;
 }

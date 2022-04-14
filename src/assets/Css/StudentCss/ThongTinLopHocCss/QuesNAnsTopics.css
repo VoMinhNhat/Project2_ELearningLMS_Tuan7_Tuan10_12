@@ -1,0 +1,254 @@
+/* Css cho phần khung bên phải */
+
+.leftTopics{float: left;
+    border-radius: 8px;
+    box-shadow: 4px 4px 25px 4px rgb(154 202 245 / 20%);
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 640px;
+    width: 380px;
+}
+
+.timKiemTheoTopics{
+    width: 75%;
+    height: 30px;
+    background: #EFEFEF;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 13px;
+    font-style: italic;
+    color: #9a9999;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.listCacTopic{
+    margin-left: 30px;
+    margin-top: 10px;
+    height: 580px;
+    overflow-y: scroll;
+}
+
+.listCacTopic::-webkit-scrollbar{
+    width: 5px;
+}
+.listCacTopic::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+.listCacTopic::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+
+
+.Topic1{
+    cursor: pointer;
+    background-color: #F0F3F6;
+    border-radius: 5px;
+    width: 97%;
+    height: 120px;
+}
+
+.Topic2{
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 1px solid #FFA75E;
+    border-radius: 5px;
+    width: 97%;
+    height: 120px;
+}
+
+.Topic2:hover{
+    background-color: #F0F3F6;
+    border: none;
+    border-radius: 5px;
+    width: 97%;
+    height: 120px;
+}
+
+.Topic-name{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+}
+
+.Topic-noidung{
+    word-break: keep-all;
+    overflow: hidden;
+    padding-top: 5px;
+    margin-left: 20px;
+    height: 50px;
+    width: 91%;
+    font-size: 13px;
+    font-weight: 500;
+    color: #373839;
+    opacity: 0.7;
+}
+
+.Topic-icon{
+    display: flex;
+    width: 90%;
+    height: 35px;
+    margin-left: 20px;
+    padding-top: 2px;
+}
+
+/* Css cho phần bên phải */
+.RightTopics{
+    float: right;
+    margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 25px 4px rgb(154 202 245 / 20%);
+    width: 925px;
+    height: 640px;
+}
+
+.top-RightTopics{
+    display: flex;
+    box-shadow: 4px 4px 25px 4px rgb(154 202 245 / 20%);
+    border-radius: 8px;
+    height: 80px;
+    padding-top: 1px;
+}
+.khung-InforTopic{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.btn-TraLoiTopic{
+    height: 30px;
+    width: 100px;
+    background: #FFD8B8;
+    border: 1px solid #FF7506;
+    border-radius: 5px;
+    margin-left: 52%;
+    margin-top: 2.5%;
+    font-weight: 600;
+}
+
+.btn-HuyTopic{
+    height: 30px;
+    width: 100px;
+    color: #FF7506;
+    border-radius: 5px;
+    margin-left: 52%;
+    margin-top: 2.5%;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+}
+
+
+.CauTraLoi-Topic{
+    height: 560px;
+    padding-left: 50px;
+    padding-top: 10px;
+    overflow-y: scroll;
+}
+
+.CauTraLoi-Topic::-webkit-scrollbar{
+    width: 5px;
+}
+.CauTraLoi-Topic::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+.CauTraLoi-Topic::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+
+.CauTraLoi-Topic h4{
+    color: rgb(103, 103, 103);
+    margin-bottom: 30px;
+}
+
+.khung-TraLoiTopic{
+    padding-top: 5px;
+    max-height: 500px;
+    width: 97%;
+    margin-bottom: 30px;
+}
+
+.top-KhungTraLoiTopic{
+    display: flex;
+}
+
+.avatar-Topic{
+    margin-left:  30px;
+    background-size: 100% 100%;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.hotenNguoiTraLoi-Topic{
+    margin-left: 20px;
+    width: 80%;
+}
+
+.giotraloi-Topic{
+    color: #373839;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 13px;
+    margin-right: 20px;
+    margin-top: 2%;
+}
+
+.Answer-Topic{
+    margin-left: 50px;
+    margin-top: 10px;
+    padding-top: 5px;
+    height: 70px;
+    width: 91%;
+    overflow-y: hidden;
+    font-size: 14px;
+    font-weight: 500;
+    color:  rgb(103, 103, 103);
+}
+
+.hinhanh-cmmt{
+    margin-left: 50px;
+    background-size: 100% 100%;
+    height: 200px;
+    width: 500px;
+}
+
+
+.khung2-MyAnswer{
+    padding-top: 10px;
+    padding-left: 10px;
+    position: absolute;
+    top: 594px;
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    width: 925px;
+    border-radius: 8px; 
+}
+
+.khung1-MyAnswer{
+    display: none; 
+}
+
+.nhapCauTraLoi-MyAnswer{
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    resize: none;
+    outline: none;
+    border: 1px solid #C9C4C0;
+    border-radius: 8px;
+    height: 130px;
+    width: 906px;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    color: #989695;
+}
+

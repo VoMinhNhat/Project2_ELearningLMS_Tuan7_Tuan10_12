@@ -1,0 +1,347 @@
+.QuesAnsLopHoc{
+    height: 710px;
+    width: 100%;
+}
+
+
+/* Css cho tabs trong question and answer */
+.QuesAnsLopHoc .ant-tabs{
+    margin-top: 0px;
+}
+.QuesAnsLopHoc .ant-tabs-content-holder{
+    background-color: rgb(255, 255, 255);
+}
+.QuesAnsLopHoc .ant-tabs-nav-list{
+    background: none !important;
+    height: 40px !important;
+    color: black !important;
+}
+.QuesAnsLopHoc .ant-tabs-tab .ant-tabs-tab-btn{
+    border-radius: 10px !important;
+    height: 40px;
+    line-height: 40px !important;
+    width: 140px !important;
+    color: black !important;
+}
+.QuesAnsLopHoc .ant-tabs-tab-active{
+    border: 1px solid #823B00;
+    background-color: #FFF9F4 !important;
+    border-radius: 10px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    color: black !important;
+}
+.QuesAnsLopHoc .ant-tabs-tab-active .ant-tabs-tab-btn{
+    background: none !important;
+    color: black !important;
+}
+
+
+
+/* Css Cho các Phần tử trong tabs chat */
+.lefForEveryThing{
+    float: left;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 638px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 7px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}
+
+.findTheoIdAndTen{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 30px;
+    margin-left: 6%;
+    margin-top: 3%;
+    border-radius: 7px;
+    font-size: 12px;
+    font-style: italic;
+    color: #737374;
+    background-color: #EFEFEF;
+    padding-right: 10px;
+    padding-left: 23px;
+}
+/* danh sách Tên và câu hỏi */
+.ListTenvaCauhoi{
+    margin-top: 10px;
+    margin-left: 6%;
+    width: 90%;
+    height: 580px;
+    overflow-y: scroll;
+}
+.ListTenvaCauhoi::-webkit-scrollbar{
+    width: 3px;
+}
+.ListTenvaCauhoi::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+.ListTenvaCauhoi::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  } 
+
+/* Tên và câu hỏi học sinh*/
+.StudentAsk{
+    border-radius: 10px;
+    display: flex;
+    line-height: 80px;
+    width: 100%;
+    height: 80px;
+    padding-top: 5px;
+    padding-left: 7px;
+}
+.StudentAsk:hover{
+    background-color: #F0F3F6;
+}
+.studentAvatar{
+    background-size: 100% 100%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+.studentName{
+    width: 175px;
+    height: 66%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/*Tin nhắn hỏi mới */
+.studentName .name{
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.studentName .ask{
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Câu hỏi cũ */
+.studentName .name2{
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.studentName .ask2{
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #898b8d;
+}
+
+/* View và time hỏi*/
+.viewAndTime{
+    margin-left: 30px;
+    margin-top: 12px;
+    height: 50px;
+}
+.viewAndTime2{
+    margin-left: 50px;
+    margin-top: 12px;
+    height: 50px;
+}
+.view{
+    color: #C9C4C0;
+    height: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.time{
+    color: #C9C4C0;
+    height: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* Css Cho các Phần tử trong vị trí câu trả lời */
+.RightForEveryThing{
+    float: right;
+    border-radius: 5px;
+    margin-right: 12px;
+    margin-top: 7px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    height: 638px;
+    width: 915px;
+}
+
+/*Phần đầu cho các phần tử trong Phần câu trả lời*/
+.top-RightForEveryThing{
+    width: 100%;
+    height: 190px;
+}
+
+.top-RightForEveryThing .infor-NguoiHoi{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    margin-top: 5px;
+}
+/*Các thông tin về người hỏi*/
+.infor-NguoiHoi .avatar-NguoiHoi{
+    background-size: 100% 100%;
+    height: 55px;
+    width: 55px;
+    margin-left: 20px;
+    border-radius: 30px; 
+}
+
+.thongtin-NguoiHoi{
+    padding-top: 10px;
+    margin-left: 15px;
+    width: 200px;
+}
+
+.thongtin-NguoiHoi .ten-NguoiHoi{
+    height: 20px;
+    line-height: 20px;
+    color: #CC5C00;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.thongtin-NguoiHoi .time-NguoiHoi{
+    display: flex;
+    height: 18px;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b6d6f;
+}
+
+.btn-TraLoi{
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 55%;
+    background-color: #FFD8B8;
+    border: 2px solid #FF7506;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-Huy{
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 55%;
+    background: none;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #FF7506;
+    border: none;
+}
+
+.khung-CauHoi{
+    font-size: 13px;
+    word-break: break-all;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+    font-weight: 600;
+    color: #373839;
+    margin: auto;
+    height: 130px;
+    width: 770px;
+}
+
+/* Css cho các câu trả lời - phần body */
+.body-RightForEveryThing{
+    height: 270px;
+}
+.AllTheAnswer{
+    margin: auto;
+    padding-top: 20px;
+    height: 100%;
+    width: 770px;
+}
+.khung-CauTraLoi{
+    border-left: 2px solid #C9C4C0;
+    height: 97px;
+    margin-top: 10px;
+}
+
+.infor-NguoiTraLoi{
+    display: flex;
+    height: 50px;
+}
+
+.avatar-NguoiTraLoi{
+    background-size: 100% 100%;
+    border-radius: 30px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.NguoiTraLoi-CacChiTiet{
+    margin-left: 10px;
+    width: 300px;
+}
+
+/*Câu trả lời*/
+.CauTraLoi-NguoiTraLoi{
+    word-break: break-all;
+    font-size: 13px;
+    font-weight: 500;
+    color: #707273;
+    height: 50px;
+    width: 714px;
+    margin-left: 47px;
+    margin-top: 5px;
+}
+
+
+
+
+/* Css cho vị trí câu trả lời - Phần bottom */
+.bottom1-RightForEveryThing{
+    height: 168px;
+    display: none;
+}
+
+.bottom2-RightForEveryThing{
+    height: 168px;
+}
+
+.khung-DeTraLoi{
+    resize: none;
+    outline: none;
+    font-weight: 450;
+    font-style: italic;
+    color: #707273;
+    font-size: 14px;
+    border: 1px solid #C9C4C0;
+    margin-left: 25px;
+    margin-top: 35px;
+    border-radius: 5px;
+    width: 95%;
+    height: 130px;
+    padding: 20px 50px 20px 50px;
+}
+
+.khung-DeTraLoi::-webkit-scrollbar{
+    width: 3px;
+}
+.khung-DeTraLoi::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+.khung-DeTraLoi::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  } 
