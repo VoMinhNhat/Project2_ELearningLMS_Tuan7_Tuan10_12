@@ -208,7 +208,6 @@
     display: flex;
     color: rgb(255, 255, 255);  
     font-size: 22px;
-    padding-top: 4px;
     top: 1px;
     left: 1180px;
     position: absolute;
@@ -285,4 +284,171 @@
     font-size: 13px;
     font-weight: 600;
     border-radius: 3px;
+}
+
+/*Css cho modal đắng xuất*/
+.ant-modal-title{
+    font-size: 27px !important;
+    font-weight: 600 !important;
+}
+.ant-modal-footer{
+    text-align: center !important;
+}
+.ant-btn-default{
+    border-radius: 5px !important;
+    width: 100px !important;
+    height: 40px !important;
+    background-color: rgb(221, 219, 219) !important;
+    font-weight: 600 !important;
+}
+.ant-modal-footer .ant-btn-primary{
+    border-radius: 5px !important;
+    width: 100px !important;
+    height: 40px !important;
+    background: #FF7506 !important;
+    font-weight: 600 !important;
+    color: rgb(255, 255, 255) !important;
+}
+.ant-modal-footer .ant-btn-default{
+    border: none !important;
+    color: black !important;
+}
+.ant-modal-footer .ant-btn{
+    border: none !important;
+}
+
+
+/*Css cho phần khun chat */
+.chatBox{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 620px;
+    width: 370px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}    
+
+.openChatBox{
+    display: flex;
+    background-color: #d4d5d7;
+    height: 50px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    padding-left: 120px;
+}
+
+.Chat{
+    height: 440px;
+    padding-left: 20px;
+    padding-top: 10px;
+    overflow-y: scroll;
+}
+.Chat::-webkit-scrollbar{
+    width: 2px;
+    opacity: 0.2;
+}
+.Chat::-webkit-scrollbar-track{
+    background: rgb(223, 222, 222);
+    border-radius: 2px;
+    opacity: 0.2;
+}
+.Chat::-webkit-scrollbar-thumb{
+    background: grey;
+    opacity: 0.2;
+}
+
+.Chat-Line{
+    display: flex;
+    color: #373839;
+    margin-bottom: 5px; 
+}
+.StuChat-Avat{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    margin-right: 5px;
+}
+.StuChat-Name{
+    height: 20px;
+    line-height: 20px;
+    width: 120px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.StuChat-Chat{
+    width: 180px;
+    max-height: 200px;
+    font-weight: 500;
+}
+
+.TeaChat-Avat{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    margin-right: 5px;
+}
+.TeaChat-Name{
+    color: #ff7300;
+    height: 20px;
+    line-height: 20px;
+    width: 120px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.TeaChat-Chat{
+    color: #ff7300;
+    width: 180px;
+    max-height: 200px;
+    font-weight: 500;
+}
+
+.Your-Chat{
+    position: relative;
+    height: 130px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.Your-Chat-Box{
+    resize: none;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #C9C4C0;;
+    width: 99%;
+    height: 98%;
+    padding: 10px 35px 10px 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.Your-Chat-Box::-webkit-scrollbar{
+    width: 2px;
+    opacity: 0.2;
+}
+.Your-Chat-Box::-webkit-scrollbar-track{
+    background: rgb(223, 222, 222);
+    border-radius: 2px;
+    opacity: 0.2;
+}
+.Your-Chat-Box::-webkit-scrollbar-thumb{
+    background: grey;
+    opacity: 0.2;
+}
+
+
+
+.chatBox-Off{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 370px;
+    display: flex;
+    background-color: #d4d5d7;
+    height: 50px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    padding-left: 120px;
 }

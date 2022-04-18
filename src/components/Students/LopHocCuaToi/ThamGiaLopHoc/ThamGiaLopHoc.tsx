@@ -7,6 +7,7 @@ import 'antd/dist/antd.css';
 import { DanhSachHocSinhThamGia } from './DanhSachHocSinhThamGia';
 import { StreamVid } from './SteamVid';
 import { LinkThamGiaLop } from './LinkThamGiaLop';
+import { ChatBox } from './ChatBox';
 
 
 
@@ -17,6 +18,7 @@ export const ThamGiaLopHoc = () =>{
             <DanhSachHocSinhThamGia/>
             <StreamVid/>
             <LinkThamGiaLop/>
+            <ChatBox/>
         </div>
     )
 }

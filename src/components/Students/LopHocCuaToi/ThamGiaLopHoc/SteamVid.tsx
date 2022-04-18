@@ -41,13 +41,14 @@ const ModalLogOut = () => {
   
     return (
       <>
-        <Button type="primary" onClick={showModal} style={{}}>
+        <Button type="primary" onClick={showModal} style={{background: 'none', border: 'none', fontSize: '20px', marginBottom: '2px'}}>
             <FiLogOut/>
         </Button>
-        <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+        <Modal title="Rời khỏi lớp học" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} 
+                                   centered={true} cancelText={'Hủy'} okText={'Xác nhận'}
+                                    style={{textAlign: 'center'}} width={700}
+        >
+          Học viên vẫn có thể vào lại lớp học bằng cách nhấn vào <b>Bắt đầu lớp học.</b> Xác nhận rời lớp học?
         </Modal>
       </>
     );
@@ -71,10 +72,10 @@ export const StreamVid = () =>{
     const [cam,setCam] = useState(<BsCameraVideoOff/>)
     const MuteCam = () =>{
         if(cam===(<BsCameraVideo/>)){
-            setMute(<BsCameraVideoOff/>)
+            setCam(<BsCameraVideoOff/>)
         }
         else if(cam===(<BsCameraVideoOff/>)){
-            setMute(<BsCameraVideo/>)
+            setCam(<BsCameraVideo/>)
         }
     }
 
