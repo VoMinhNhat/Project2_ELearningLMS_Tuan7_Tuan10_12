@@ -1,0 +1,67 @@
+.DanhSachBaiKiemTra{
+    position: absolute;
+    left: 85px;
+    top: 45px;
+    width: 1434px;
+    height: 805px;
+}
+
+.titleDanhSachBaiKiemTra{
+    display: flex;
+    height: 40px;
+    width: 500px;
+    line-height: 40px;
+    margin-left: 40px;
+}
+
+.DanhSachBaiKiemTra .ant-tabs{
+    width: 95%;
+    height: 720px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+/*Css cho các phần tabs*/
+.DanhSachBaiKiemTra .ant-tabs-tab{
+    border-top: 2px solid #F17F21 !important;
+    border-left: 2px solid #F17F21 !important;
+    border-right: 2px solid #F17F21 !important;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 200px;
+    height: 47px;
+    line-height: 47px;
+    font-weight: 700 !important;
+    padding: 0 !important;
+    text-align: center;
+    display: inline-block !important;
+}
+
+.DanhSachBaiKiemTra .ant-tabs-tab-active{
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%) !important;
+    width: 200px;
+    height: 47px;
+}
+
+.DanhSachBaiKiemTra .ant-tabs-tab-active > .ant-tabs-tab-btn{
+    color: white !important;
+}
+
+.DanhSachBaiKiemTra .ant-tabs-tab:hover {
+    color: black !important;
+}
+
+.DanhSachBaiKiemTra .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar {
+    bottom: 0;
+    background-color: white;
+    opacity: 0 !important;
+}
+
+.DanhSachBaiKiemTra .ant-tabs-content-holder{
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25); 
+    background-color: white;
+    margin-top: -15px;
+    border-radius: 15px;
+    height: 650px !important;
+}

@@ -1,0 +1,198 @@
+.BangDiem{
+    position: absolute;
+    top: 55px;
+    left: 85px;
+    height: 795px;
+    width: 1434px;
+    background-size: 100% 100%;
+}
+
+.titleBangDiem{
+    display: flex;
+    height: 45px;
+    width: 250px;
+    line-height: 40px;
+    margin-left: 40px;
+}
+
+.inforOfStud{
+    display: flex;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 94.5%;
+    padding-top: 15px;
+    border-bottom: 1px solid #C9C4C0;
+}
+
+/* Css Cho phần bảng điểm */
+.TableBangDiem{
+    border-radius: 10px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    width: 95%;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 1px;
+}
+
+.locKetQua-BangDiem{
+    height: 50px;
+    width: 500px;
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+    display: flex;
+}
+
+/*Css chọn niên khóa*/
+.chonNienKhoa-BangDiem{
+    width: 130px;
+}
+.chonNienKhoa-BangDiem .ant-select-selector{
+    height: 28px !important;
+    font-weight: 500 !important; 
+}
+.chonNienKhoa-BangDiem .ant-select-arrow{
+    color: #F17F21 !important;
+}
+.chonNienKhoa-BangDiem .ant-select-selector{
+    border-radius: 3px !important;
+    border: 1px solid #373839 !important;
+}
+.chonNienKhoa-BangDiem .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+}
+
+
+/*Css chon Khối*/
+.chonKhoi-BangDiem{
+    width: 80px;
+    margin-left: 20px;
+}
+.chonKhoi-BangDiem .ant-select-selector{
+    height: 28px !important;
+    font-weight: 500 !important; 
+}
+.chonKhoi-BangDiem .ant-select-arrow{
+    color: #F17F21 !important;
+}
+.chonKhoi-BangDiem .ant-select-selector{
+    border-radius: 3px !important;
+    border: 1px solid #373839 !important;
+}
+.chonKhoi-BangDiem .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 50%;
+}
+
+/*Css chọn học kì*/
+.chonHocKi-BangDiem{
+    width: 130px;
+    margin-left: 30px;
+}
+.chonHocKi-BangDiem .ant-select-selector{
+    height: 28px !important;
+    font-weight: 500 !important; 
+}
+.chonHocKi-BangDiem .ant-select-arrow{
+    color: #F17F21 !important;
+}
+.chonHocKi-BangDiem .ant-select-selector{
+    border-radius: 3px !important;
+    border: 1px solid #373839 !important;
+}
+.chonHocKi-BangDiem .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+}
+
+/*Css chọn lọc bảng điểm*/
+.btn-Loc-BangDiem{
+    cursor: pointer;
+    height: 28px;
+    margin-top: 22px;
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 3px;
+    border: none;
+    background: #FF7506;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.khungChua-Table{
+    height: 484px;
+    margin-top: 65px;
+}
+
+.titleKhungChua-Table{
+    width: 97%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.btn-InBangDiem{
+    background: white;
+    border: 2px solid #FF7506;
+    height: 35px;
+    width: 120px;
+    font-weight: 600;
+    color: #FF7506;
+    border-radius: 3px;
+    margin-top: 6px;
+    margin-left: 928px;
+}
+
+/*Css cho table hiện điểm sinh viên*/
+.table-BangDiem{
+    background-color: #FF7506;
+    margin-top: 10px;
+    width: 97%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-BangDiem .ant-table-thead > tr > th{
+    background-color: #F17F21 !important;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 700;
+    color: white;
+}  
+
+.table-BangDiem .ant-table-tbody > tr > td{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.table-BangDiem .ant-table-tbody .ant-table-row .ant-table-cell{
+    font-size: 13px !important;
+    border-bottom: 1px solid rgb(204, 204, 204) !important;
+}
+.table-BangDiem .ant-table-body{
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+}
+.table-BangDiem .ant-table-body::-webkit-scrollbar{
+    width: 2px !important;
+}
+.table-BangDiem .ant-table-body::-webkit-scrollbar-track{
+    background-color: rgb(207, 207, 207, 0.5);
+}
+
+.table-BangDiem .ant-table-body::-webkit-scrollbar-thumb{
+    background-color: rgba(114, 114, 114, 0.5);
+}
+
+.table-BangDiem .ant-pagination{
+    display: none;
+}

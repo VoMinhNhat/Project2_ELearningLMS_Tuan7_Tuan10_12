@@ -1,0 +1,244 @@
+.thongBao{
+    background-size: 100% 100%;
+    height: 805px;
+    width: 1434px;
+    position: absolute;
+    top: 45px;
+    left: 85px;
+}
+.title-ThongBao{
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 80px;
+}
+.tabsThongBao{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 430px;
+    height: 35px;
+    margin-left: 80px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+/*Css cho tabs*/
+.tab-ThongBao-User{
+    cursor: pointer;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    margin-right: 10px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.4);
+    transition: all ease 0.3s;
+}
+.tab-ThongBao-User-Off{
+    cursor: pointer;
+    text-align: center;
+    color: #373839;
+    font-size: 15px;
+    font-weight: 600;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+
+.tab-ThongBao-Sys{
+    cursor: pointer;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.4);
+    transition: all ease 0.3s;
+}
+.tab-ThongBao-Sys-Off{
+    cursor: pointer;
+    text-align: center;
+    color: #373839;
+    font-size: 15px;
+    font-weight: 600;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+
+/*Css Cho các Tabs Table*/
+.tables-Nofi-User{
+    height: 645px;
+    width: 1270px;
+    margin-left: 80px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.4);
+    transition: all ease 0.2s;
+}
+.tables-Nofi-User-Off{
+    display: none;
+}
+
+.tables-Nofi-Sys{
+    height: 645px;
+    width: 1270px;
+    margin-left: 80px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.4);
+    transition: all ease 0.2s;
+}
+.tables-Nofi-Sys-Off{
+    display: none;
+}
+
+/*Css cho các chi tiết torng table*/
+
+/*Css cho user*/
+.tables-Nofi-User .ant-checkbox-inner{
+    border: 1px solid #0B80EC;
+    height: 20px;
+    width: 20px;
+}
+.tables-Nofi-User .ant-table-tbody .ant-table-row .ant-table-cell{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-weight: 500 !important;
+    font-size: 14px;
+}
+.tables-Nofi-User .ant-table-tbody > tr:nth-child(even){
+    background-color: rgb(227, 228, 229, 0.5);
+}
+.tables-Nofi-User .ant-table-body::-webkit-scrollbar{
+    width: 5px !important;
+}
+.tables-Nofi-User .ant-table-body::-webkit-scrollbar-track{
+    background-color: #E0E0E0;
+    border-radius: 20px;
+}
+.tables-Nofi-User .ant-table-body::-webkit-scrollbar-thumb{
+    background-color: #999796;
+    border-radius: 20px;
+}
+.tables-Nofi-User .ant-pagination-item-link{
+    border: none !important;
+}
+.tables-Nofi-User .ant-pagination-item{
+    border-radius: 20px !important;
+    color: black !important;
+    border: none;
+}
+
+.tables-Nofi-User .ant-pagination-item-active{
+    border-radius: 20px !important;
+    border: none !important;
+    background-color: #FF7506;
+    font-weight: 600;
+}
+.tables-Nofi-User .ant-pagination-item-active a{
+    color: white !important;
+}
+.input-Nofi-User{
+    background-color: #F0F3F6;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 325px;
+    height: 35px;
+    position: absolute;
+    top: 149px;
+    left: 145px;
+    z-index: 9;
+    padding-left: 35px;
+    padding-right: 20px;
+}
+.btn-NofiUser-Danhdau:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+.btn-NofiUser-Xoa:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+/*Css cho sys*/
+.tables-Nofi-Sys .ant-checkbox-inner{
+    border: 1px solid #0B80EC;
+    height: 20px;
+    width: 20px;
+}
+.tables-Nofi-Sys .ant-table-tbody .ant-table-row .ant-table-cell{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-weight: 500 !important;
+    font-size: 14px;
+}
+.tables-Nofi-Sys .ant-table-tbody > tr:nth-child(even){
+    background-color: rgb(227, 228, 229, 0.5);
+}
+.tables-Nofi-Sys .ant-table-body::-webkit-scrollbar{
+    width: 5px !important;
+}
+.tables-Nofi-Sys .ant-table-body::-webkit-scrollbar-track{
+    background-color: #E0E0E0;
+    border-radius: 20px;
+}
+.tables-Nofi-Sys .ant-table-body::-webkit-scrollbar-thumb{
+    background-color: #999796;
+    border-radius: 20px;
+}
+.tables-Nofi-Sys .ant-pagination-item-link{
+    border: none !important;
+}
+.tables-Nofi-Sys .ant-pagination-item{
+    border-radius: 20px !important;
+    color: black !important;
+    border: none;
+}
+
+.tables-Nofi-Sys .ant-pagination-item-active{
+    border-radius: 20px !important;
+    border: none !important;
+    background-color: #FF7506;
+    font-weight: 600;
+}
+.tables-Nofi-Sys .ant-pagination-item-active a{
+    color: white !important;
+}
+.input-Nofi-Sys{
+    background-color: #F0F3F6;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 325px;
+    height: 35px;
+    position: absolute;
+    top: 149px;
+    left: 145px;
+    z-index: 9;
+    padding-left: 35px;
+    padding-right: 20px;
+}
+.btn-NofiSys-Danhdau:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+.btn-NofiSys-Xoa:hover{
+    cursor: pointer;
+    font-weight: 700;
+}

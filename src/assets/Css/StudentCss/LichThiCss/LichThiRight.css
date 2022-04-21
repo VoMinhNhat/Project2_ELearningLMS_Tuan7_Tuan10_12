@@ -1,0 +1,94 @@
+.LichThiRight{
+    height: 630px;
+    width: 210px;
+    position: absolute;
+    left: 1197px;
+    top: 160px;
+}
+
+.top-LichThiRight{
+    background-color: white;
+    height: 420px;
+    border-radius: 15px;
+    padding-top: 10px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}
+
+.thongTinMonThi{
+    width: 90%;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    overflow-y: scroll;
+}
+.thongTinMonThi::-webkit-scrollbar{
+    width: 1px;
+}
+.loiNhanNhuThi{
+    width: 90%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(255, 84, 0, 0.7);
+}
+
+
+
+.bottom-LichThiRight{
+    background-color: white;
+    height: 180px;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}
+
+.checkbox1 .ant-checkbox .ant-checkbox-inner{
+    border: 1px solid #FFB923;
+    width: 20px;
+    height: 20px;
+}
+.checkbox1 .ant-checkbox-checked .ant-checkbox-inner{
+    background-color: #FFB923;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox2 .ant-checkbox .ant-checkbox-inner{
+    border: 1px solid #2EACEE;
+    width: 20px;
+    height: 20px;
+}
+.checkbox2 .ant-checkbox-checked .ant-checkbox-inner{
+    background-color: #2EACEE;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox3 .ant-checkbox .ant-checkbox-inner{
+    border: 1px solid #49C510;
+    width: 20px;
+    height: 20px;
+}
+.checkbox3 .ant-checkbox-checked .ant-checkbox-inner{
+    background-color: #49C510;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox4 .ant-checkbox .ant-checkbox-inner{
+    border: 1px solid #FF7506;
+    width: 20px;
+    height: 20px;
+}
+.checkbox4 .ant-checkbox-checked .ant-checkbox-inner{
+    background-color: #FF7506;
+    width: 20px;
+    height: 20px;
+}

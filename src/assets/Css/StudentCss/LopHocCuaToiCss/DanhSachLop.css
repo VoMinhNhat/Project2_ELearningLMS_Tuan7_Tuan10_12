@@ -241,3 +241,21 @@
 .tableDanhSach .ant-pagination .ant-table-pagination .ant-table-pagination-right{
     margin-top: 50px;
 }
+
+.tableDanhSach .ant-pagination-item-link{
+    border: none;
+}
+
+.tableDanhSach .ant-pagination-item{
+    border: none;
+}
+.tableDanhSach .ant-pagination-item a{
+    color: black;
+}   
+.tableDanhSach .ant-pagination-item-active{
+    background-color: #F17F21;
+    border-radius: 20px;
+} 
+.tableDanhSach .ant-pagination-item-active a{
+    color: rgb(255, 255, 255);
+}

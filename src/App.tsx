@@ -1,5 +1,6 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
+import 'antd/dist/antd.css';
 import './App.css';
 
 //import các trang ui
@@ -15,6 +16,11 @@ import { ThamGiaLopHoc } from './components/Students/LopHocCuaToi/ThamGiaLopHoc/
 import { LogInThamGia } from './components/Students/LogInThamGia/LogInThamGia';
 import { ThamGiaHocVien } from './components/Students/LogInThamGia/ThamGiaHocVien';
 import { TrangXacNhanOTP } from './components/Students/LogInThamGia/TrangXacNhanOTP';
+import { DanhSachBaiKiemTra } from './components/Students/BaiKiemTra/DanhSachBaiKiemTra';
+import { BangDiem } from './components/Students/BaiKiemTra/BangDiem';
+import { LichThi } from './components/Students/LichThi/LichThi';
+import { ThongBao } from './components/Students/ThongBao/ThongBao';
+import { TroGiup } from './components/Students/TroGiup/TroGiup';
 
 
 function App() {
@@ -26,6 +32,8 @@ function App() {
       <Menu/>
 
       <Logout/>
+
+      {/* Danh sách các trang cho Student */}
 
       {/* <TongQuat/> */}
 
@@ -39,8 +47,18 @@ function App() {
 
       {/* <ThamGiaHocVien/> */}
 
-      <TrangXacNhanOTP/>
+      {/* <TrangXacNhanOTP/> */}
+
+      {/* <DanhSachBaiKiemTra/> */}
+
+      {/* <BangDiem/> */}
+
+      <LichThi/>
+
+      {/* <ThongBao/> */}
       
+      {/* <TroGiup/> */}
+
     </div>
   );
 }

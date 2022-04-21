@@ -1,0 +1,184 @@
+.TongHopBaiKiemTra{
+    margin-left: auto;
+    margin-right: auto;
+    height: 652px;
+    width: 98%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25); 
+    padding-top: 15px;
+}
+
+
+/*Css cho phần chôn môn*/
+.chonMon-BaiKiemTra{
+    margin-left: 30px;
+}
+.chonMon-BaiKiemTra h4{
+    font-weight: 700;
+}
+.chonMon-BaiKiemTra .ant-select-selector{
+    height: 32px !important;
+    font-weight: 500 !important; 
+}
+.chonMon-BaiKiemTra .ant-select-arrow{
+    color: #F17F21 !important;
+}
+.chonMon-BaiKiemTra .ant-select-selector{
+    border-radius: 3px !important;
+    border: 1px solid #373839 !important;
+}
+.chonMon-BaiKiemTra .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+}
+
+/* Css cho phần chọn khối*/
+.chonKhoi-BaiKiemTra{
+    margin-left: 30px;
+}
+.chonKhoi-BaiKiemTra h4{
+    font-weight: 700;
+}
+.chonKhoi-BaiKiemTra .ant-select-selector{
+    height: 32px !important;
+    font-weight: 500 !important; 
+}
+.chonKhoi-BaiKiemTra .ant-select-arrow{
+    color: #F17F21 !important;
+}
+.chonKhoi-BaiKiemTra .ant-select-selector{
+    border-radius: 3px !important;
+    border: 1px solid #373839 !important;
+}
+.chonKhoi-BaiKiemTra .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+}
+
+
+/* Css cho phần chọn ngày*/
+.chonNgay-BaiKiemTra{
+    margin-left: 30px;
+}
+.ant-picker-next-icon{
+    color: #F17F21 ;
+} 
+.ant-picker-prev-icon{
+    color: #F17F21;
+} 
+
+.ant-picker-month-btn:hover, .ant-picker-year-btn:hover{
+    color: #F17F21 !important;
+}
+
+.ant-picker-content th{
+    color:  #0B80EC !important;
+    font-weight: 700 !important;
+}
+
+.ant-picker-cell-in-view .ant-picker-cell-inner:hover{
+    background-color: #ff9946 !important;
+    border-radius: 12px;
+    color: White !important;
+    font-weight: 600;
+}
+.ant-picker-panel-container{
+    border-radius: 10px !important;
+}
+.ant-picker-cell-inner{
+    background: none !important;
+    color: black !important;
+}
+.ant-picker-cell-inner::before{
+    background: rgba(255, 115, 0, 0.2);
+    border-radius: 12px !important;
+    border: none !important;
+}
+.anticon{
+    color: #ffa45a !important;
+}
+
+/* Css cho phần button chọn Lọc kết quả thi*/
+.btn-LocKetQuaThi{
+    cursor: pointer;
+    margin-top: 26px;
+    margin-left: 30px;
+    border: none;
+    background: #FF7506;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    height: 35px;
+    width: 130px;
+}
+
+/*Css cho phần input kiếm bài thi */
+.input-TimKiemBaiThi{
+    cursor: pointer;
+    margin-top: 26px;
+    margin-left: 27%;
+    border: none;
+    outline: none;
+    background: #EFEFEF;
+    border-radius: 20px;
+    font-size: 13px;
+    height: 35px;
+    width: 310px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+/*Css cho phần table trong baitest*/
+.Table-BaiKiemTra{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 1280px;
+    height: 540px;
+    border-radius: 10px;
+}
+.Table-BaiKiemTra .ant-table-thead > tr >th{
+    background-color: #F17F21; 
+    font-weight: 700 !important;
+    padding-top: 7px ;
+    padding-bottom: 7px;
+    color: white;
+}
+.Table-BaiKiemTra .ant-table-tbody > tr:nth-child(even){
+    background-color: #f2f2f5;
+}
+.Table-BaiKiemTra .ant-table-tbody .ant-table-row .ant-table-cell{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    font-weight: 500 !important;
+    font-size: 12px;
+}
+
+.Table-BaiKiemTra .ant-pagination .ant-table-pagination .ant-table-pagination-right{
+    margin-top: 50px;
+}
+
+.Table-BaiKiemTra .ant-pagination-item-link{
+    border: none !important;
+}
+.Table-BaiKiemTra .ant-pagination-item{
+    border-radius: 20px !important;
+    color: black !important;
+    border: none;
+}
+
+.Table-BaiKiemTra .ant-pagination-item-active{
+    border-radius: 20px !important;
+    border: none !important;
+    background-color: #FF7506;
+    font-weight: 600;
+}
+.Table-BaiKiemTra .ant-pagination-item-active a{
+    color: white !important;
+}
+
+.Table-BaiKiemTra .ant-pagination{
+    position: absolute !important;
+    top: 475px;
+    left: 1120px;
+}
