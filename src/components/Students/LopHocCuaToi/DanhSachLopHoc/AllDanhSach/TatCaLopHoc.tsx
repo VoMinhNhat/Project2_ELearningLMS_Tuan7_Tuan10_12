@@ -5,6 +5,8 @@ import { BiInfoCircle } from 'react-icons/bi';
 
 import { Select, DatePicker, Space, Table, Tag, Checkbox } from 'antd';
 
+import { Link } from 'react-router-dom';
+
 
 // Option
 const { Option } = Select;
@@ -69,6 +71,15 @@ const DanhSachLop = [
                        Đang tiến hành
                     </div>
                 )
+            }else if (status==='Bắt đầu'){
+                return(
+                    <Link to={'/ThamGiaLopHoc'}>
+                    <button style={{width: '90px', height: '30px', fontSize: '14px', fontWeight: '500', borderRadius: '5px', border: 'none', 
+                                    color: 'white', background:'#FF7506', cursor: 'pointer'}}>            
+                        Tham gia
+                    </button>
+                    </Link>
+                )
             }
         }
     },
@@ -78,9 +89,11 @@ const DanhSachLop = [
         key: 'subjectInfor',
         render: (subjectInfor:any)=>{
             return(
+                <Link to={'/ThongTinLop'}>
                 <div style={{fontSize: '25px', color: '#F17F21', textAlign: 'center'}}>
                     <BiInfoCircle/>
                 </div>
+                </Link>
             )
         }
     }
@@ -93,7 +106,7 @@ const data = [
         subject: 'Toán Đại số',
         time: 'Thứ 3, 19/08/2020, 09:00 AM',
         teacher: 'GV. Nguyễn Văn A',
-        status: 'Chưa bắt đầu',
+        status: 'Bắt đầu',
     },
     {
         key: '2',

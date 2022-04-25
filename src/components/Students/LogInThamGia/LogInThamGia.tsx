@@ -1,6 +1,8 @@
 import { Input } from "antd";
 import React, {useState} from "react";
 
+import { Link } from 'react-router-dom';
+
 import '../../../assets/Css/StudentCss/LogInThamGiaCss/LogInThamGia.css';
 
 import {AiOutlineEyeInvisible} from 'react-icons/ai';
@@ -32,6 +34,7 @@ export const LogInThamGia = () =>{
     }
 
     const [checkBtnXacNhan, setCheckBtnXacNhan] = useState (''||'btn-XacNhanLogIn')
+    
     const checkBtnThamGia =(e:any) =>{
         const value = e.target.value;
         if(value !==''){
@@ -40,6 +43,7 @@ export const LogInThamGia = () =>{
             setCheckBtnXacNhan('btn-XacNhanLogIn')
         }
     }
+
 
 
     return(
@@ -58,8 +62,12 @@ export const LogInThamGia = () =>{
                 <input className='inputHoTen-LogInThamGia' key='HotenHs'/>
 
                 <div className='btn-LogInThamGia'>
-                    <button className='btn-HuyLogIn'>Hủy</button>
-                    <button className={checkBtnXacNhan}>Tham Gia</button>
+                    <Link to={'/ThongTinLop'} style={{textDecoration: 'none'}}>
+                        <button className='btn-HuyLogIn'>Hủy</button>
+                    </Link>
+                    <Link to={'/ThamGiaLopHoc'}>
+                        <button className={checkBtnXacNhan}>Tham Gia</button>
+                    </Link>
                 </div>
 
             </div>

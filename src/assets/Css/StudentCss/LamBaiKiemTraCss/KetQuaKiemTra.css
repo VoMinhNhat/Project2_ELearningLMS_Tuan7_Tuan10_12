@@ -1,0 +1,87 @@
+.Khung-Tonghop{
+    border: 1px solid #FF7506;
+    margin-left: 40px;
+    margin-top: 5px;
+    width: 95%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.khung-DapAn{
+    width: 1100px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.khung-DapAn .ant-collapse-item .anticon{
+    color: #ffffff;
+    font-size: 20px !important;
+}
+.khung-DapAn .ant-collapse{
+    border: none;
+    border-radius: 10px 0 10px 0;
+}
+.khung-DapAn .ant-collapse-item{
+    border-radius: 10px 0 10px 0;
+}
+.khung-DapAn .ant-collapse-header{
+    background: #FF7506;
+    font-size: 15px;
+    font-weight: 700;
+    color: white !important;
+    border-radius: 10px 0 10px 0;
+}
+.khung-DapAn .ant-collapse-content-box{
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}
+
+
+.cacCauTraLoi-KetQua{
+    height: 600px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.cacCauTraLoi-KetQua::-webkit-scrollbar{
+    width: 5px;
+}
+.cacCauTraLoi-KetQua::-webkit-scrollbar-track{
+    background-color: #C9C4C0;
+    border-radius: 2px;
+}
+.cacCauTraLoi-KetQua::-webkit-scrollbar-thumb{
+    background-color: #FF7506;
+    border-radius: 2px;
+}
+
+.cacCauTraLoi-KetQua span.ant-radio + *{
+    font-size: 15px !important;
+    font-weight: 500;
+}
+
+.cacCauTraLoi-KetQua .ant-radio-wrapper-checked span{
+    color: #49C510 !important;
+}
+
+.cacCauTraLoi-KetQua .ant-radio-checked .ant-radio-input .ant-radio-inner{
+    background-color: #49C510 !important;
+}
+
+
+.ghiChu-KetQua{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    width: 220px;
+    height: 200px;
+    position: absolute;
+    right: 40px;
+    top: 432px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.khung-DapAn .ant-collapse-header{
+    border-radius: 10px 10px 0 0 !important;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}

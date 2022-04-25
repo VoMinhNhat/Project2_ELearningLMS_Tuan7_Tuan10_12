@@ -1,0 +1,137 @@
+.TracNghiem-Position {
+    background-color: #ffffff;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 1348px;
+    height: 580px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}
+
+
+/*Css cho phần list các câu hỏi*/
+.TracNghiem-Position .ant-tabs-nav-wrap{
+    background: #F0F3F6;
+    border-radius: 10px 0 0 0;
+}
+.TracNghiem-Position .ant-tabs-nav-operations{
+    background: #F0F3F6;
+    border-radius: 0 0 0 10px;
+}
+.TracNghiem-Position .ant-tabs-nav-list{
+    margin-top: 50px;
+    width: 320px !important;
+    height: 500px;
+    overflow-y: scroll;
+    margin-right: 20px;
+    background: #F0F3F6;
+}
+
+.TracNghiem-Position .ant-tabs-nav-list::-webkit-scrollbar{
+    width: 5px;
+}
+.TracNghiem-Position .ant-tabs-nav-list::-webkit-scrollbar-track{
+    border-radius: 5px;
+    background: #C9C4C0;
+}
+.TracNghiem-Position .ant-tabs-nav-list::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    height: 60px;
+    background: #8f8c8c;
+}
+
+.TracNghiem-Position .ant-tabs > .ant-tabs-nav .ant-tabs-nav-more{
+    display: none;
+}
+
+.TracNghiem-Position .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab{
+    width: 260px !important;
+    margin-left: 40px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+}
+
+.TracNghiem-Position .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab-active{
+    width: 260px !important;
+    margin-left: 40px;
+    margin-bottom: -10px;
+    background-color: #FF7506 !important;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}
+
+.TracNghiem-Position .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab:hover{
+    background-color: #FFD8B8;
+    color: white;
+}
+
+.TracNghiem-Position .ant-tabs-left > .ant-tabs-nav .ant-tabs-ink-bar{
+    bottom: 0;
+    background-color: white;
+    opacity: 0 !important;
+}
+
+.TracNghiem-Position .ant-tabs-tab-btn{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+}
+
+.TracNghiem-Position .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    color: white ;
+}
+
+/*Css cho vị trí hiện câu hỏi*/
+.TracNghiem-Position .ant-tabs-content-holder{
+    width: 1010px;
+    border-radius: 0 10px 10px 0;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.TracNghiem-Position span.ant-radio + *{
+    font-size: 15px !important;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.TracNghiem-Position .ant-radio-wrapper-checked span{
+    color: #0B80EC !important;
+}
+
+
+/*Css cho các button quay lai */
+.TracNghiem-Position .button-QuayLai{
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    position: absolute;
+    z-index: 9;
+    top: 710px;
+    left: 610px;
+    color: white;
+    border-radius: 5px;
+    background-color: #C9C4C0;
+}
+
+.TracNghiem-Position .button-TiepTheo{
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    position: absolute;
+    z-index: 9;
+    top: 710px;
+    left: 800px;
+    color: white;
+    border-radius: 5px;
+    background-color: #FF7506;
+}   

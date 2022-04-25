@@ -5,6 +5,8 @@ import { Select, DatePicker, Space, Table, Tag  } from 'antd';
 import {BsSearch} from 'react-icons/bs';
 import {BiInfoCircle} from 'react-icons/bi';
 
+import { Link } from 'react-router-dom';
+
 //Chọn Môn Thi
 const { Option} = Select;
 
@@ -79,20 +81,39 @@ const columns = [
         title: 'Bài làm',
         dataIndex: 'BaiLam',
         key: 'BaiLam',
-        render: (bailam:any)=>{
+        render: (bailam:any, record: any)=>{
             if(bailam==='Bắt đầu'){
+                if(record.MonHoc==='Ngữ Văn'){
                 return(
-                    <button style={{background: '#FF7506', color: 'white',
-                                    border: 'none', borderRadius: '3px',
-                                    width: '90px', height: '30px', 
-                                    fontWeight: '700', fontSize: '14px',
-                                    cursor: 'pointer',
-                                    }}
-                    >
-                        Bắt đầu
-                    </button>
+                    <Link to={'/KiemTraTuLuan'}>
+                        <button style={{background: '#FF7506', color: 'white',
+                                        border: 'none', borderRadius: '3px',
+                                        width: '90px', height: '30px', 
+                                        fontWeight: '700', fontSize: '14px',
+                                        cursor: 'pointer',
+                                        }}
+                        >
+                            Bắt đầu
+                        </button>
+                    </Link>
                 )
-            } else if(bailam==='Đang thực hiện'){
+            }else{
+                return(
+                    <Link to={'/KiemTraTracNghiem'}>
+                        <button style={{background: '#FF7506', color: 'white',
+                                        border: 'none', borderRadius: '3px',
+                                        width: '90px', height: '30px', 
+                                        fontWeight: '700', fontSize: '14px',
+                                        cursor: 'pointer',
+                                        }}
+                        >
+                            Bắt đầu
+                        </button>
+                    </Link>
+                )
+            }
+            } 
+            else if(bailam==='Đang thực hiện'){
                 return(
                     <div style={{ color: '#0B80EC', fontWeight: '400', fontStyle: 'italic', fontSize: '13px' }}>
                        Đang thực hiện
@@ -148,7 +169,7 @@ const columns = [
   const data = [
     {
       key: '1',
-      MonHoc: 'Toán Đại Số',
+      MonHoc: 'Lịch sử',
       NoiDung: 'Kiểm tra 1 tiết',
       GiangVien: 'Gv.Nguyễn Văn A',
       NgayLamBai: 'Thứ 5, 21/08/2020 12:00 PM',
@@ -158,7 +179,7 @@ const columns = [
     },
     {
         key: '2',
-        MonHoc: 'Lịch sử',
+        MonHoc: 'Ngữ Văn',
         NoiDung: 'Kiểm tra 1 tiết',
         GiangVien: 'Gv.Nguyễn Văn A',
         NgayLamBai: 'Thứ 5, 21/08/2020 12:00 PM',
@@ -258,7 +279,7 @@ const columns = [
     },
     {
         key: '12',
-        MonHoc: 'Toán Đại số Học',
+        MonHoc: 'Ngữ Văn',
         NoiDung: 'Kiểm tra giữa kì',
         GiangVien: 'Gv.Nguyễn Văn A',
         NgayLamBai: 'Thứ 5, 21/08/2020 12:00 PM',

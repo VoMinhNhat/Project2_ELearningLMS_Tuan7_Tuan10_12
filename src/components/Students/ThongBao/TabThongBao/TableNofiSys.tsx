@@ -3,6 +3,8 @@ import { Table, Popover, Button } from 'antd';
 
 import {BsSearch, BsThreeDotsVertical} from 'react-icons/bs';
 
+// import 'antd/dist/antd.css';
+
 import avatar_1 from '../../../../assets/image/chatavatar.jpg';
 import avatar_2 from '../../../../assets/image/avatar.jpg';
 import avatar_3 from '../../../../assets/image/khungstream.jpg';
@@ -168,16 +170,17 @@ const data = [
 
 export const TableNofiSys = () =>{
     return (
-        <>    
+        <div>    
               <Popover content={locNofiSys} trigger="click" >
-                <Button style={{position: 'absolute', top: '153px', left: '1320px', zIndex: 99, border: 'none', background: 'none', width: '12px', paddingLeft: '0'}}>
-                  <BsThreeDotsVertical style={{fontSize: '20px'}}/>
-                </Button>
+                <button style={{position: 'absolute', top: '145px', left: '1300px',zIndex: '10', background: 'none',width: '30px',
+                              height: '40px',border: 'none', cursor: 'pointer'}}>
+                  <BsThreeDotsVertical style={{fontSize: '20px', marginTop: '5px'}}/>
+                </button>
               </Popover>
             <BsSearch style={{fontSize: '18px', position: 'absolute', top: '157px', left: '154px', zIndex: 100}}/>
             <input className='input-Nofi-Sys'/>
             <Table columns={columns} dataSource={data} rowSelection={{type: 'checkbox'}} scroll={{ y: 507 }} 
                                                        pagination={{ position: ['bottomCenter'], pageSize: 11}}/>
-        </>
+        </div>
     )
 }

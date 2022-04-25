@@ -21,6 +21,10 @@ import { BangDiem } from './components/Students/BaiKiemTra/BangDiem';
 import { LichThi } from './components/Students/LichThi/LichThi';
 import { ThongBao } from './components/Students/ThongBao/ThongBao';
 import { TroGiup } from './components/Students/TroGiup/TroGiup';
+import { KiemTraTracNghiem } from './components/Students/LamBaiKiemTra/KiemTraTracNghiem';
+import { KiemTraTuLuan } from './components/Students/LamBaiKiemTra/KiemTraTuLuan';
+import { KetQuaKiemTra } from './components/Students/LamBaiKiemTra/KetQuaKiemTra';
+import { Student } from './components/Students/Student';
 
 
 function App() {
@@ -32,32 +36,8 @@ function App() {
       <Menu/>
 
       <Logout/>
-
-      {/* Danh sách các trang cho Student */}
-
-      {/* <TongQuat/> */}
-
-      {/* <DanhSachLop/> */}
-
-      {/* <ThongTinLopHoc/> */}
-
-      {/* <ThamGiaLopHoc/> */}
-
-      {/* <LogInThamGia/> */}
-
-      {/* <ThamGiaHocVien/> */}
-
-      {/* <TrangXacNhanOTP/> */}
-
-      {/* <DanhSachBaiKiemTra/> */}
-
-      {/* <BangDiem/> */}
-
-      <LichThi/>
-
-      {/* <ThongBao/> */}
       
-      {/* <TroGiup/> */}
+      <Student/>
 
     </div>
   );

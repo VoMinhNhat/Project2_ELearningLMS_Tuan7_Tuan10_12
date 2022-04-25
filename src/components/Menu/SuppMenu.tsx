@@ -6,6 +6,8 @@ import { AiOutlineEye, AiOutlineBell } from 'react-icons/ai';
 import { BsBook, BsFileEarmarkText, BsChatDots } from 'react-icons/bs';
 import { BiCalendar } from 'react-icons/bi';
 
+import { Link } from 'react-router-dom';
+
 
 export const SuppMenu = () => {
     return (
@@ -15,11 +17,13 @@ export const SuppMenu = () => {
                 <ul className="suppMenuUl">
 
                     {/* Danh mục Tổng Quan */}
-                    <li className="suppMenuLi">
-                        <AiOutlineEye />&nbsp;
-                        Tổng quan
-                        <div className="notImport" />
-                    </li>
+                    <Link to={'/'}> 
+                        <li className="suppMenuLi">
+                            <AiOutlineEye />&nbsp;
+                            Tổng quan
+                            <div className="notImport" />
+                        </li>
+                    </Link>
 
                      {/* Danh mục Lớp Học */}
                     <li className="suppMenuLi">
@@ -29,12 +33,16 @@ export const SuppMenu = () => {
                     </li>
                     
                         {/* Danh mục Nhỏ Cho Phần Lớp Học Của Tôi */}
-                        <li className="smallMenuLi">
-                            Danh sách lớp học
-                        </li>
-                        <li className="smallMenuLi">
-                            Tham gia lớp học
-                        </li>
+                        <Link to ={'/DanhSachLop'}>
+                            <li className="smallMenuLi">
+                                Danh sách lớp học
+                            </li>
+                        </Link>
+                        <Link to={'/LogInThamGia'}>
+                            <li className="smallMenuLi">
+                                Tham gia lớp học
+                            </li>
+                        </Link>
 
                      {/* Danh mục Test */}
                     <li className="suppMenuLi">
@@ -44,33 +52,43 @@ export const SuppMenu = () => {
                     </li>
 
                         {/* Danh mục Nhỏ Cho Phần Bài Kiểm Tra */}
-                        <li className="smallMenuLi">
-                            Danh sách bài kiểm tra
-                        </li>
-                        <li className="smallMenuLi">
-                            Bảng điểm
-                        </li>                    
+                        <Link to ={'/DanhSachBaiKiemTra'}>
+                            <li className="smallMenuLi">
+                                Danh sách bài kiểm tra
+                            </li>
+                        </Link>
+                        <Link to={'/BangDiem'}>
+                            <li className="smallMenuLi">
+                                Bảng điểm
+                            </li>                    
+                        </Link>
 
                      {/* Danh mục Lịch Thi */}
-                    <li className="suppMenuLi">
-                        <BiCalendar />&nbsp;
-                        Lịch thi
-                        <div className="notImport" />
-                    </li>
+                     <Link to ={'/LichThi'}>
+                        <li className="suppMenuLi">
+                            <BiCalendar />&nbsp;
+                            Lịch thi
+                            <div className="notImport" />
+                        </li>
+                    </Link>
                     
                      {/* Danh mục Thông Báo */}
-                    <li className="suppMenuLi">
-                        <AiOutlineBell />&nbsp;
-                        Thông báo
-                        <div className="notImport" />
-                    </li>
+                     <Link to ={'/ThongBao'}>
+                        <li className="suppMenuLi">
+                            <AiOutlineBell />&nbsp;
+                            Thông báo
+                            <div className="notImport" />
+                        </li>
+                    </Link>
 
                      {/* Danh mục Trợ Giúp */}
-                    <li className="suppMenuLi">
-                        <BsChatDots />&nbsp;
-                        Trợ giúp
-                        <div className="notImport" />
-                    </li>
+                     <Link to ={'/TroGiup'}>
+                        <li className="suppMenuLi">
+                            <BsChatDots />&nbsp;
+                            Trợ giúp
+                            <div className="notImport" />
+                        </li>
+                    </Link>
 
                 </ul>
             </div>

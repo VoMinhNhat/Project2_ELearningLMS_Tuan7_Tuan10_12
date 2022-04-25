@@ -5,6 +5,8 @@ import { BiInfoCircle } from 'react-icons/bi';
 
 import { Select, DatePicker, Space, Table, Tag } from 'antd';
 
+import { Link } from 'react-router-dom';
+
 // Option
 const { Option } = Select;
 //niên khóa
@@ -48,21 +50,7 @@ const DanhSachLop = [
         dataIndex: 'status',
         key: 'status',
         render: (status: any) => {
-            if (status === 'Đã hoàn thành') {
-                return (
-                    <div style={{ color: '#49C510', fontWeight: '400', fontStyle: 'italic', fontSize: '13px' }}>
-                        Đã hoàn thành
-                    </div>
-                )
-            }    
-            else if (status === 'Chưa bắt đầu') {
-                return (
-                    <div style={{ color: '#ED2025', fontWeight: '400', fontStyle: 'italic', fontSize: '13px' }}>
-                        Chưa bắt đầu
-                    </div>
-                )
-            }
-            else if (status === 'Đang tiến hành') {
+            if (status === 'Đang tiến hành') {
                 return (
                     <div style={{ color: '#0B80EC', fontWeight: '400', fontStyle: 'italic', fontSize: '13px' }}>
                        Đang tiến hành
@@ -77,9 +65,11 @@ const DanhSachLop = [
         key: 'subjectInfor',
         render: (subjectInfor:any)=>{
             return(
+                <Link to={'/ThongTinLop'}>
                 <div style={{fontSize: '25px', color: '#F17F21', textAlign: 'center'}}>
                     <BiInfoCircle/>
                 </div>
+                </Link>
             )
         }
     }
@@ -92,7 +82,7 @@ const data = [
         subject: 'Toán Đại số',
         time: 'Thứ 3, 19/08/2020, 09:00 AM',
         teacher: 'GV. Nguyễn Văn A',
-        status: 'Chưa bắt đầu',
+        status: 'Đang tiến hành',
     },
     {
         key: '2',
@@ -100,7 +90,7 @@ const data = [
         subject: 'Toán Hình học',
         time: 'Thứ 3, 19/08/2020, 09:00 AM',
         teacher: 'GV. Nguyễn Văn A',
-        status: 'Chưa bắt đầu',
+        status: 'Đang tiến hành',
     },
     {
         key: '3',
@@ -108,7 +98,7 @@ const data = [
         subject: 'Toán Đại số',
         time: 'Thứ 3, 19/08/2020, 09:00 AM',
         teacher: 'GV. Nguyễn Văn A',
-        status: 'Đã hoàn thành',
+        status: 'Đang tiến hành',
     },
     {
         key: '4',
@@ -124,7 +114,7 @@ const data = [
         subject: 'Toán Đại số',
         time: 'Thứ 3, 19/08/2020, 09:00 AM',
         teacher: 'GV. Nguyễn Văn A',
-        status: 'Chưa bắt đầu',
+        status: 'Đang tiến hành',
     },
     {
         key: '6',
@@ -140,7 +130,7 @@ const data = [
         subject: 'Toán Đại số',
         time: 'Thứ 3, 19/08/2020, 09:00 AM',
         teacher: 'GV. Nguyễn Văn A',
-        status: 'Chưa bắt đầu',
+        status: 'Đang tiến hành',
     },
     {
         key: '8',
@@ -148,7 +138,7 @@ const data = [
         subject: 'Toán Hình học',
         time: 'Thứ 3, 19/08/2020, 09:00 AM',
         teacher: 'GV. Nguyễn Văn A',
-        status: 'Đã hoàn thành',
+        status: 'Đang tiến hành',
     },
 ];
 

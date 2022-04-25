@@ -3,6 +3,7 @@ import React,{useState} from 'react';
 import '../../../assets/Css/StudentCss/ThongBaoCss/ThongBaoChinh.css';
 
 import background from '../../../assets/image/background.png';
+
 import { TableNofiSys } from './TabThongBao/TableNofiSys';
 import { TableNofiUser } from './TabThongBao/TableNofiUser';
 

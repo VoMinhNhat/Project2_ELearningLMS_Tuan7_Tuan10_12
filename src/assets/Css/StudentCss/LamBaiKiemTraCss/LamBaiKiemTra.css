@@ -1,0 +1,69 @@
+.LamBaiKiemTra{
+    background-color: aqua;
+    height: 800px;
+    width: 1434px;
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    background-size: 100% 100%;
+}
+
+.title-LamBaiKT{
+    display: flex;
+    margin-left: 40px;
+}
+.title-1-LamBaiKT{
+    font-size: 17px;
+    font-weight: 600;
+    color: #C9C4C0;
+    margin-right: 5px;
+}
+.title-icon-LamBaiKT{
+    font-size: 17px;
+    color: #FF7506;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+
+.infor-ThiSinh-KT{
+    height: 80px;
+    margin-left: 40px;
+    margin-top: 5px;
+    width: 96%;
+    display: flex;
+}
+
+
+.nopbai-LamBaiKT{
+    height: 40px; 
+    margin-left: 40px;
+    margin-top: 15px;
+    width: 94%;
+}
+
+.btn-NopBai-LamBaiKT{
+    cursor: pointer;
+    float: right;
+    background-color: #C9C4C0;
+    height: 100%;
+    width: 110px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.btn-NopBai-LamBaiKT:hover{
+    float: right;
+    height: 100%;
+    width: 110px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #FF7506;
+}
+
+

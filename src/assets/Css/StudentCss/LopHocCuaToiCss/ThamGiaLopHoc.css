@@ -52,7 +52,6 @@
 .HsThamGia{
     border-radius: 2px;
     position: relative;
-    background-color: aqua;
     width: 170px;
     height: 90px;
     margin-bottom: 15px;
@@ -320,7 +319,7 @@
 
 /*Css cho phần khun chat */
 .chatBox{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     background-color: #ffffff;
@@ -329,6 +328,9 @@
     border-radius: 16px 16px 0 0;
     box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
 }    
+.chatBox-2{
+    display: none;
+}
 
 .openChatBox{
     display: flex;
@@ -441,7 +443,7 @@
 
 
 .chatBox-Off{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     width: 370px;
@@ -451,4 +453,8 @@
     border-radius: 16px 16px 0 0;
     box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
     padding-left: 120px;
+}
+
+.chatBox-Off-2{
+    display: none;
 }

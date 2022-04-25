@@ -169,9 +169,10 @@ export const TableNofiUser = () =>{
     return (
         <>
               <Popover content={locNofi} trigger="click">
-                <Button style={{position: 'absolute', top: '153px', left: '1320px', zIndex: 99, border: 'none', background: 'none', width: '12px', paddingLeft: '0'}}>
-                  <BsThreeDotsVertical style={{fontSize: '20px'}}/>
-                </Button>
+                <button style={{position: 'absolute', top: '145px', left: '1300px',zIndex: '10', background: 'none',width: '30px',
+                              height: '40px',border: 'none', cursor: 'pointer'}}>
+                  <BsThreeDotsVertical style={{fontSize: '20px', marginTop: '5px'}}/>
+                </button>
               </Popover>
             <BsSearch style={{fontSize: '18px', position: 'absolute', top: '157px', left: '154px', zIndex: 100}}/>
             <input className='input-Nofi-User'/>
