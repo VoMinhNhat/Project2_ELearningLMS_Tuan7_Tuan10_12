@@ -37,7 +37,7 @@
     background-color: #F2F2F2;
     border: none;
     outline: none;
-    width: 85%;
+    width: 98%;
     height: 40px;
     font-size: 15px;
     border-radius: 5px;
@@ -54,7 +54,7 @@
 
 .iconUser{
     position: absolute;
-    top: 33%;
+    top: 35%;
     left: 2%;
     font-size: 18px;
     color: #C9C4C0;
@@ -75,7 +75,7 @@
     background-color: #F2F2F2;
     border: none;
     outline: none;
-    width: 85%;
+    width: 98%;
     height: 40px;
     font-size: 15px;
     border-radius: 5px;
@@ -92,7 +92,7 @@
 
 .iconPass{
     position: absolute;
-    top: 52%;
+    top: 55%;
     left: 2%;
     color: #C9C4C0;
 }

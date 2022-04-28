@@ -6,7 +6,7 @@ import 'antd/dist/antd.css';
 
 import { BiInfoCircle } from 'react-icons/bi';
 
-
+import { Link } from "react-router-dom";
 
 // Collapse
 const { Panel } = Collapse;
@@ -64,9 +64,11 @@ const columns = [
         dataIndex: 'infor',
         render: (infor: any) => {
             return (
-                <div className="iconThongTin">
-                    <BiInfoCircle />
-                </div>
+                <Link to={'/ThongTinLop'}>
+                    <div className="iconThongTin">
+                        <BiInfoCircle />
+                    </div>
+                </Link>
             )
         }
     },

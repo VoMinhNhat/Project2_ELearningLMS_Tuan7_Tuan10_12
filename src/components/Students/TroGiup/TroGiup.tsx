@@ -13,17 +13,21 @@ import { GoLocation } from 'react-icons/go';
 import { BsTelephone } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 
-//Radio
-const App = () => {
+
+
+export const TroGiup = () => {
+
+    //Radio
+const ChonTroGiup = () => {
     const [value, setValue] = React.useState(1);
 
-    const onChange = (e: any) => {
+    const onChangeTroGiup = (e: any) => {
         console.log('radio checked', e.target.value);
         setValue(e.target.value);
     };
 
     return (
-        <Radio.Group onChange={onChange} value={value}>
+        <Radio.Group onChange={onChangeTroGiup} value={value}>
             <Radio value={1} style={{ fontSize: '15px', fontWeight: '700', marginRight: '40px' }}>Đào tạo</Radio>
             <Radio value={2} style={{ fontSize: '15px', fontWeight: '700', marginRight: '40px' }}>Học vụ</Radio>
             <Radio value={3} style={{ fontSize: '15px', fontWeight: '700', marginRight: '40px' }}>Tiết học</Radio>
@@ -32,7 +36,6 @@ const App = () => {
     );
 };
 
-export const TroGiup = () => {
     return (
         <>
             {/* Trợ giúp vấn đề công ty */}
@@ -47,7 +50,7 @@ export const TroGiup = () => {
                 </div>
 
                 <div style={{ marginLeft: '30px', marginTop: '20px' }}>
-                    <App />
+                    <ChonTroGiup />
                 </div>
 
                 <input className='input-TroGiup' />

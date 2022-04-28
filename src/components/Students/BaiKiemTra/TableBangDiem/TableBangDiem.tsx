@@ -114,7 +114,7 @@ const columns = [
         title: 'Tổng điểm trung bình',
         dataIndex: 'TongDiemTrungBinh',
         key: 'TongDiemTrungBinh',
-        render: (TongDiemTrungBinh:any, record: any) =>{
+        render: (TongDiemTrungBinh:any) =>{
             if(TongDiemTrungBinh > 5){
                 return(
                     <div style={{color: '#49C510', fontWeight: '700', textAlign: 'center'}}>

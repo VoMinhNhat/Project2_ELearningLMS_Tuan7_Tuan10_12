@@ -6,10 +6,85 @@ import { AiOutlineEye, AiOutlineBell } from 'react-icons/ai';
 import { BsBook, BsFileEarmarkText, BsChatDots } from 'react-icons/bs';
 import { BiCalendar } from 'react-icons/bi';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import {useEffect, useState} from "react";
 
 
-export const SuppMenu = () => {
+export const SuppMenu = (props: any) => {
+
+    const StudMenu = [
+        {
+            path: '/',
+            section: '',
+            name: 'Tổng quan',
+            icon: <AiOutlineEye/>,
+        },
+        {
+            path: '/Class',
+            section: 'DanhSachLop',
+            name: 'Lớp học của tôi',
+            icon: <BsBook />,
+            smallMenu: [
+                {
+              id: 1,
+              path: '/Class/DanhSachLop',
+              section: 'DanhSachLop',
+              name: 'Danh Sách Lớp',
+            },
+            {
+                id: 2,
+                path: '/LoginThamGia',
+                section: 'DanhSachLop',
+                name: 'Tham gia lớp học',
+              },
+            ],
+        },
+        {
+            path: '/Test',
+            section: 'DanhSachBaiKiemTra',
+            name: 'Bài kiểm tra',
+            icon: <BsFileEarmarkText />,
+            smallMenu: [
+                {
+              id: 3,
+              path: '/Test/DanhSachBaiKiemTra',
+              section: 'DanhSachBaiKiemTra',
+              name: 'Danh sách bài kiểm tra',
+            },
+            {
+                id: 4,
+                path: '/Test/BangDiem',
+                section: 'BangDiem',
+                name: 'Bảng điểm',
+              },
+            ],
+        },
+        {
+            path: '/LichThi',
+            section: 'LichThi',
+            name: 'Lịch thi',
+            icon: <BiCalendar />,
+        },
+        {
+            path: '/ThongBao',
+            section: 'ThongBao',
+            name: 'Thông báo',
+            icon: <AiOutlineBell />,
+        },
+        {
+            path: '/TroGiup',
+            section: 'TroGiup',
+            name: 'Trợ giúp',
+            icon: <BsChatDots />,
+        },
+    ]
+
+    console.log(props.activeIndex)
+    const [activeMenuSmall, setActiveMenuSmall] = useState<number | null>(null)
+    const handleActiveSub = (id:number) => {
+        setActiveMenuSmall(id)
+    }
+    console.log(activeMenuSmall)
     return (
         <>
             {/* Menu Phụ */}
@@ -17,79 +92,31 @@ export const SuppMenu = () => {
                 <ul className="suppMenuUl">
 
                     {/* Danh mục Tổng Quan */}
-                    <Link to={'/'}> 
-                        <li className="suppMenuLi">
-                            <AiOutlineEye />&nbsp;
-                            Tổng quan
-                            <div className="notImport" />
-                        </li>
-                    </Link>
-
-                     {/* Danh mục Lớp Học */}
-                    <li className="suppMenuLi">
-                        <BsBook />&nbsp;
-                        Lớp học của tôi
-                        <div className="notImport" />
-                    </li>
-                    
-                        {/* Danh mục Nhỏ Cho Phần Lớp Học Của Tôi */}
-                        <Link to ={'/DanhSachLop'}>
-                            <li className="smallMenuLi">
-                                Danh sách lớp học
+                    {
+                    StudMenu && StudMenu.map((item:any, index:number) => (
+                        <>
+                        <Link to={item.path} key={index} onClick={() => props.handleActiveMenu(index)}> 
+                            <li className={`${props.activeIndex === index ? 'suppMenuLiActive ': 'suppMenuLi'}`}>
+                                {item.icon}&nbsp;&nbsp;
+                                {item.name}
+                                <div className={`${props.activeIndex === index ? ' notImportActive ': 'notImport'}`}/>
                             </li>
-                        </Link>
-                        <Link to={'/LogInThamGia'}>
-                            <li className="smallMenuLi">
-                                Tham gia lớp học
-                            </li>
-                        </Link>
-
-                     {/* Danh mục Test */}
-                    <li className="suppMenuLi">
-                        <BsFileEarmarkText />&nbsp;
-                        Bài kiểm tra
-                        <div className="notImport" />
-                    </li>
-
-                        {/* Danh mục Nhỏ Cho Phần Bài Kiểm Tra */}
-                        <Link to ={'/DanhSachBaiKiemTra'}>
-                            <li className="smallMenuLi">
-                                Danh sách bài kiểm tra
-                            </li>
-                        </Link>
-                        <Link to={'/BangDiem'}>
-                            <li className="smallMenuLi">
-                                Bảng điểm
-                            </li>                    
-                        </Link>
-
-                     {/* Danh mục Lịch Thi */}
-                     <Link to ={'/LichThi'}>
-                        <li className="suppMenuLi">
-                            <BiCalendar />&nbsp;
-                            Lịch thi
-                            <div className="notImport" />
-                        </li>
-                    </Link>
-                    
-                     {/* Danh mục Thông Báo */}
-                     <Link to ={'/ThongBao'}>
-                        <li className="suppMenuLi">
-                            <AiOutlineBell />&nbsp;
-                            Thông báo
-                            <div className="notImport" />
-                        </li>
-                    </Link>
-
-                     {/* Danh mục Trợ Giúp */}
-                     <Link to ={'/TroGiup'}>
-                        <li className="suppMenuLi">
-                            <BsChatDots />&nbsp;
-                            Trợ giúp
-                            <div className="notImport" />
-                        </li>
-                    </Link>
-
+                        </Link> 
+                         
+                    {
+                        item.smallMenu && item.smallMenu.map((smallItem:any, index:number) => ( 
+                            <Link to={smallItem.path} key={index} onClick={() => handleActiveSub(smallItem.id)}>
+                                 <li className={`${activeMenuSmall === smallItem.id ? 'smallSuppMenuLiActive': 'smallSuppMenuLi'}`}>
+                                    {smallItem.name}
+                                </li>
+                            </Link>
+                        ))
+                    }   
+                    </> 
+                    ))
+                }
+                
+                
                 </ul>
             </div>
         </>

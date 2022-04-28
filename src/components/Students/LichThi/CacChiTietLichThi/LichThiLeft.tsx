@@ -1,4 +1,5 @@
 import { Select } from 'antd';
+import { Calendar } from 'antd';
 
 import { AiOutlineDown, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 
@@ -10,6 +11,12 @@ const { Option } = Select;
 function chonKhoiLichThi(value: any) {
     console.log(`selected ${value}`);
 }
+
+
+//Calendar
+function onPanelChange(value:any, mode:any) {
+    console.log(value.format('YYYY-MM-DD'), mode);
+  }
 
 export const LichThiLeft = () => {
 
@@ -87,7 +94,7 @@ export const LichThiLeft = () => {
                 </div>
                 <div className="content-bottom2">
 
-                    
+                    <Calendar onPanelChange={onPanelChange}/>
                 </div>
             </div>
 

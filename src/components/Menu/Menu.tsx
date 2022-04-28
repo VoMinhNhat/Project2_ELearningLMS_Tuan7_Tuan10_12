@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import '../../assets/Css/MenuCss/menu.css';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation, NavLink } from 'react-router-dom';
 
 // import icon
 import { AiOutlineEye, AiOutlineBell } from 'react-icons/ai';
@@ -10,8 +10,61 @@ import { BiCalendar } from 'react-icons/bi';
 
 import webSymbol from '../../assets/image/Logo.svg';
 import { SuppMenu } from "./SuppMenu";
+import { Student } from "../Students/Student";
 
-export const Menu = () => {
+
+
+export const Menu = (props:any) => {
+
+    const StudMenu = [
+        {
+            path: '/',
+            section: '',
+            icon: <AiOutlineEye/>,
+        },
+        {
+            path: '/Class',
+            section: 'Class',
+            icon: <BsBook />,
+        },
+        {
+            path: '/Test',
+            section: 'Test',
+            icon: <BsFileEarmarkText />,
+        },
+        {
+            path: '/LichThi',
+            section: 'LichThi',
+            icon: <BiCalendar />,
+        },
+        {
+            path: '/ThongBao',
+            section: 'ThongBao',
+            icon: <AiOutlineBell />,
+        },
+        {
+            path: '/TroGiup',
+            section: 'TroGiup',
+            icon: <BsChatDots />,
+        },
+    ]
+
+    const { pathname } = useLocation()
+
+    const [activeMenu, setActiveMenu] = useState<number>(0);
+    const curPath = pathname.split("/")[1]
+
+
+    const activeIndex = StudMenu.findIndex(item => item.section === curPath)
+    
+    console.log(activeIndex)
+    useEffect(() => { 
+        setActiveMenu(curPath.length === 0 ? 0 : activeIndex)
+    },[] )
+
+    const handleActiveMenu = (index:number) => {
+        setActiveMenu(index)
+    }
     return (
         <div className="mainMenu">
 
@@ -19,29 +72,19 @@ export const Menu = () => {
             <img className="webSymbol" style={{ backgroundImage: `url(${webSymbol})` }} />
 
             {/* Menu Chính */}
-            <ul className="mainMenuUl">
-                <Link to={'/'}> 
-                    <li className="mainMenuLi"><AiOutlineEye /></li>
-                </Link>
-                <Link to ={'/DanhSachLop'}>
-                    <li className="mainMenuLi"><BsBook /></li>
-                </Link>
-                <Link to ={'/DanhSachBaiKiemTra'}>
-                    <li className="mainMenuLi"><BsFileEarmarkText /></li>
-                </Link>
-                <Link to ={'/LichThi'}>
-                    <li className="mainMenuLi"><BiCalendar /></li>
+            <ul className="mainMenuUl">   
+            {
+                StudMenu && StudMenu.map((item:any, index:number) => (
+                    <Link to ={item.path} key={index} onClick={() => handleActiveMenu(index)}>
+                    <li className={`${activeIndex === index ? ' mainMenuLiActive': 'mainMenuLi'}`} >{item.icon}</li>
                 </Link>    
-                <Link to ={'/ThongBao'}>
-                    <li className="mainMenuLi"><AiOutlineBell /></li>
-                </Link>    
-                <Link to ={'/TroGiup'}>
-                    <li className="mainMenuLi"><BsChatDots /></li>
-                </Link>    
+                ))
+            }
+               
             </ul>
 
             {/* Menu Phụ */}
-            <SuppMenu/>
+            <SuppMenu activeIndex={activeIndex} activeMenu={activeMenu}/>
 
         </div>
     )

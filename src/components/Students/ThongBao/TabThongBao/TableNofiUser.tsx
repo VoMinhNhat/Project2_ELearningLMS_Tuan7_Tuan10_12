@@ -174,7 +174,7 @@ export const TableNofiUser = () =>{
                   <BsThreeDotsVertical style={{fontSize: '20px', marginTop: '5px'}}/>
                 </button>
               </Popover>
-            <BsSearch style={{fontSize: '18px', position: 'absolute', top: '157px', left: '154px', zIndex: 100}}/>
+            <BsSearch style={{fontSize: '18px', position: 'absolute', top: '157px', left: '154px', zIndex: 10}}/>
             <input className='input-Nofi-User'/>
             <Table columns={columns} dataSource={data} rowSelection={{type: 'checkbox'}} scroll={{ y: 507 }} 
                                                        pagination={{ position: ['bottomCenter'], pageSize: 11}}/>

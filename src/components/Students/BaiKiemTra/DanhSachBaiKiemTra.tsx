@@ -3,6 +3,8 @@ import { Tabs } from 'antd';
 import '../../../assets/Css/StudentCss/BaiKiemTraCss/DanhSachBaiKiemTra.css';
 
 import {AiOutlineRight} from 'react-icons/ai';
+
+
 import { TatCaBaiKiemTra } from './TabsDanhSachBaiTest/TatCaBaiKiemTra';
 import { BaiKiemTraSapToi } from './TabsDanhSachBaiTest/BaiKiemTraSapToi';
 import { BaiKiemChuaXong } from './TabsDanhSachBaiTest/BaiKiemTraChuaXong';
@@ -30,6 +32,7 @@ const DanhSachKiemTra = () => (
 
 export const DanhSachBaiKiemTra = () =>{
     return(
+
         <div className="DanhSachBaiKiemTra">
 
             <div className='titleDanhSachBaiKiemTra'>

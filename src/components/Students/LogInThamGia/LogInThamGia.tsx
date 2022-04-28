@@ -62,10 +62,10 @@ export const LogInThamGia = () =>{
                 <input className='inputHoTen-LogInThamGia' key='HotenHs'/>
 
                 <div className='btn-LogInThamGia'>
-                    <Link to={'/ThongTinLop'} style={{textDecoration: 'none'}}>
+                    <Link to={'/Class/ThongTinLop'} style={{textDecoration: 'none'}}>
                         <button className='btn-HuyLogIn'>Hủy</button>
                     </Link>
-                    <Link to={'/ThamGiaLopHoc'}>
+                    <Link to={'/Class/ThamGiaLopHoc'}>
                         <button className={checkBtnXacNhan}>Tham Gia</button>
                     </Link>
                 </div>
