@@ -14,6 +14,8 @@ import { OutPutStudent } from './components/Students/OutPutStudent';
 
 //import các trang leader ship
 import { LeaderMenu } from './components/Menu/LeaderMenu';
+import { TongQuanLeader } from './components/Leadership/TongQuanLeader/TongQuan';
+import { KhaiBaoDuLieu } from './components/Leadership/KhaiBaoDuLieu/KhaiBaoDuLieu';
 
 
 function App() {
@@ -25,7 +27,14 @@ function App() {
 
       <LeaderMenu/>
 
+      <Logout/>
+
       {/* <OutPutStudent/> */}
+
+      {/* <TongQuanLeader/> */}
+
+      <KhaiBaoDuLieu/>
+      
 
     </div>
   );

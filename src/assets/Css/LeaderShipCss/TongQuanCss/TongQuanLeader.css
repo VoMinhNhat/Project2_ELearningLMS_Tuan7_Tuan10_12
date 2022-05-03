@@ -1,0 +1,204 @@
+/*Css cho phần tổng hợp*/
+.TongHop-Leader{
+    width: 1310px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+}
+.TongHop-NienKhoa-Leader {
+    padding-top: 2%;
+}
+
+.TongHop-NienKhoa-Leader .ant-select-selector{
+    height: 30px !important;
+    line-height: 30px;
+    font-weight: 500 !important; 
+}
+.TongHop-NienKhoa-Leader .ant-select-arrow{
+    color: #F17F21 !important;
+}
+.TongHop-NienKhoa-Leader .ant-select-selector{
+    border-radius: 3px !important;
+    border: 1px solid #373839 !important;
+}
+.TongHop-NienKhoa-Leader .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+}
+
+.TongHop-Leader .leaderItem{
+    width: 321px;
+    height: 100%;
+    margin-left: 50px;
+    background-color: #F17F21;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.soluong-leaderItem{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.what-SoLuong-leaderItem{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-top: -15px;
+}
+
+
+/*Css cho phần body*/
+.BodyTongQuan{
+    width: 1310px;
+    height: 335px;
+    margin-top: 20px;
+}
+
+.thongKeKetQuaHocTap{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 935px;
+    height: 100%;
+    float: left;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}
+.thongKetKQHT-header{
+    height: 35px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.thongKetKQHT-header .ant-select-selector{
+    height: 27px !important;
+    font-weight: 500 !important; 
+}
+.thongKetKQHT-header .ant-select-arrow{
+    color: #F17F21 !important;
+}
+.thongKetKQHT-header .ant-select-selector{
+    border-radius: 3px !important;
+    border: 1px solid #373839 !important;
+}
+.thongKetKQHT-header .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+}
+.thongKetKQHT-header .ant-select-selection-item{
+    line-height: 27px !important;
+}
+
+.thongkeKQHT-body{
+    height: 220px;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.thongkeKQHT-footer{
+    height: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-top: 1.5%;
+    padding-left: 10%;
+    display: flex;
+}
+
+.soLuongHocVien{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 350px;
+    height: 100%;
+    float: right;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.soLuongHocVien-Header{
+    width: 310px;
+    height: 30px;
+}
+.soLuongHocVien-Header .ant-select-selector{
+    height: 27px !important;
+    font-weight: 500 !important; 
+}
+.soLuongHocVien-Header .ant-select-arrow{
+    color: #F17F21 !important;
+}
+.soLuongHocVien-Header .ant-select-selector{
+    border-radius: 3px !important;
+    border: 1px solid #373839 !important;
+}
+.soLuongHocVien-Header .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+}
+.soLuongHocVien-Header .ant-select-selection-item{
+    line-height: 27px !important;
+}
+
+
+/*Css cho phần footer*/
+.footerTongQuan{
+    background-color: white;
+    border-radius: 10px;
+    width: 1310px;
+    height: 235px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+.footerTongQuan-Header{
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    width: 1230px;
+}
+.footerTongQuan-Header .ant-picker{
+    border: 1px solid black !important;
+    border-radius: 5px;
+}
+.footerTongQuan-Header .anticon{
+    color: #FF7506;
+}
+.footerTongQuan-Header .ant-picker-active-bar{
+    background-color: #FF7506 !important;
+}
+.ant-picker-prev-icon{
+    color: #FF7506 !important;
+    font-size: 18px !important;
+}
+.ant-picker-next-icon{
+    color: #FF7506 !important;
+    font-size: 18px !important;
+}
+.ant-picker-date-panel .ant-picker-content thead > tr > th  {
+    color: #0B80EC !important;
+    font-size: 15px;
+    font-weight: 500 !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before{
+    border: 1px solid #FF7506;
+    border-radius: 10px !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner{
+    background-color: #F17F21 !important;
+    border-radius: 12px !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner{
+    background-color: #F17F21 !important;
+    border-radius: 12px !important;
+}
+
+.footerTongQuan-Body{
+    width: 1230px;
+    height: 160px;
+    margin-top: 15px;
+}
