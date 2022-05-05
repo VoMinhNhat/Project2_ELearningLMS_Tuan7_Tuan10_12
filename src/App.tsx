@@ -22,6 +22,7 @@ function App() {
 
   return (
     <div style={{display: 'flex'}}>
+      {/* <OutPutStudent/> */}
 
       <Dangnhap/>
 
@@ -29,12 +30,11 @@ function App() {
 
       <Logout/>
 
-      {/* <OutPutStudent/> */}
-
       {/* <TongQuanLeader/> */}
 
       <KhaiBaoDuLieu/>
       
+
 
     </div>
   );

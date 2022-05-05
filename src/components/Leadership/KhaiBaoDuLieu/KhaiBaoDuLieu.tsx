@@ -5,6 +5,7 @@ import { Select, Tabs } from 'antd';
 
 import React, { useState } from 'react';
 import { DuLieuNienKhoa } from './CacTabKhacNhau/DuLieuNienKhoa';
+import { DuLieuToBoMon } from './CacTabKhacNhau/DuLieuToBoMon';
 
 
 // Select chọn cấp
@@ -33,7 +34,7 @@ const TabsDuLieu = () => (
             <DuLieuNienKhoa/>
         </TabPane>
         <TabPane tab="Tổ - Bộ môn" key="2">
-            Tổ - Bộ môn
+            <DuLieuToBoMon/>
         </TabPane>
         <TabPane tab="Khoa - Khối" key="3">
             Khoa - Khối
