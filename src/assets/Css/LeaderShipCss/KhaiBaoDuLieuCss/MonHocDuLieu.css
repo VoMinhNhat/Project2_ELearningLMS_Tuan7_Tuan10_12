@@ -1,0 +1,173 @@
+.DuLieuMonHoc{
+    height: 700px;
+    width: 1050px;
+}
+
+.header-DuLieuMonHoc{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.table-DuLieuMonHoc{
+    background-color: white;
+    width: 100%;
+    height: 640px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    border-radius: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+/*Css các c hi tiết header*/
+.select-MonHoc-Khoi .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 40%;
+    height: 25px;
+}
+
+.select-MonHoc-Khoi .ant-select-selector{
+    border: 1px solid #373839 !important;
+    border-radius: 5px !important; 
+    height: 29px !important;
+    width: 60px !important;   
+}
+.select-MonHoc-Khoi .ant-select-single{
+    width: 63px !important;
+}
+.select-MonHoc-Khoi .ant-select-arrow{
+    color: #FF7506 !important;
+}
+
+.select-MonHoc-Lop .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 57%;
+    height: 25px;
+}
+
+.select-MonHoc-Lop .ant-select-selector{
+    border: 1px solid #373839 !important;
+    border-radius: 5px !important; 
+    height: 29px !important;
+    width: 100px !important;   
+}
+.select-MonHoc-Lop .ant-select-single{
+    width: 99px !important;
+}
+.select-MonHoc-Lop .ant-select-arrow{
+    color: #FF7506 !important;
+}
+
+/*Css thêm môn học modal */
+.select-ToBoMon-MonHoc .ant-select-single{
+    background: #F2F2F2 !important;
+}
+.select-ToBoMon-MonHoc .ant-select-arrow{
+    color: #FF7506;
+}
+.select-ToBoMon-MonHoc .ant-select .ant-select-single .ant-select-show-arrow{
+    background: #F2F2F2 !important;
+}
+.select-ToBoMon-MonHoc .ant-select-selector{
+    background: #F2F2F2 !important;
+    border: none !important;
+    border-radius: 5px !important;
+}
+
+.select-ToBoMon-MonHoc2 .ant-select-single{
+    background: #F2F2F2 !important;
+}
+.select-ToBoMon-MonHoc2 .ant-select-arrow{
+    color: #FF7506;
+}
+.select-ToBoMon-MonHoc2 .ant-select-selector{
+    border: 1px solid rgba(55, 56, 57, 0.5) !important;
+    border-radius: 5px !important;
+}
+
+.select-ToBoMon-LoaiMonHoc .ant-select-single{
+    background: #F2F2F2 !important;
+}
+.select-ToBoMon-LoaiMonHoc .ant-select-arrow{
+    color: #FF7506;
+}
+.select-ToBoMon-LoaiMonHoc .ant-select .ant-select-single .ant-select-show-arrow{
+    background: #F2F2F2 !important;
+}
+.select-ToBoMon-LoaiMonHoc .ant-select-selector{
+    background: #F2F2F2 !important;
+    border: none !important;
+    border-radius: 5px !important;
+}
+
+.select-ToBoMon-LoaiMonHoc2 .ant-select-single{
+    background: #F2F2F2 !important;
+}
+.select-ToBoMon-LoaiMonHoc2 .ant-select-arrow{
+    color: #FF7506;
+}
+.select-ToBoMon-LoaiMonHoc2 .ant-select-selector{
+    border: 1px solid rgba(55, 56, 57, 0.5) !important;
+    border-radius: 5px !important;
+}
+
+/*Css cho các header table */
+.header-Table-DuLieuMonHoc{
+    height: 30px;
+    line-height: 30px;
+}
+.HienThiDuLieuMonHoc{
+    height: 500px;
+    margin-top: 20px;
+}
+
+.HienThiDuLieuMonHoc thead{
+    background: linear-gradient(90deg, rgba(241,127,33,1) 0%, rgba(255,84,0,1) 100%) !important;
+    width: 100%;
+    border-radius: 10px 10px 0 0 !important;
+}
+.HienThiDuLieuMonHoc thead > tr > th{
+    background: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    color:  white;
+    font-size: 13px !important;
+}
+
+.HienThiDuLieuMonHoc tbody > tr > td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.HienThiDuLieuMonHoc .ant-table-tbody > tr:nth-child(even){
+    background-color: #f2f3f6;
+}
+
+.HienThiDuLieuMonHoc .ant-pagination{
+    position: absolute;
+    right: 0;
+    top: 500px
+}
+.HienThiDuLieuMonHoc .ant-pagination .ant-pagination-item-link{
+    border: none !important;
+    font-size: 20px;
+    color: #373839;
+}
+
+.HienThiDuLieuMonHoc .ant-pagination-item-active{
+    background-color: #FF7506;
+    color: white !important;
+    border: none;
+    border-radius: 30px;
+}
+.HienThiDuLieuMonHoc .ant-pagination-item-active a{
+    color: white;
+    font-weight: 500;
+}
+
+.HienThiDuLieuMonHoc .ant-pagination-item{
+    border: none;
+}

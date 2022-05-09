@@ -1,0 +1,103 @@
+.DuLieuLoaiDiem{
+    height: 700px;
+    width: 1050px;
+}
+
+.header-DuLieuLoaiDiem{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.table-DuLieuLoaiDiem{
+    background-color: white;
+    width: 100%;
+    height: 640px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    border-radius: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+/*Css cho các modal*/
+.select-HeSo-LoaiDiem .ant-select-selection-search{
+    width: 40%;
+    height: 25px;
+}
+.select-HeSo-LoaiDiem .ant-select-selector{
+    background-color: #F2F2F2 !important;
+    border: none;
+    border-radius: 5px !important; 
+    height: 29px !important;
+    width: 130px !important;   
+}
+.select-HeSo-LoaiDiem .ant-select-single{
+    width: 63px !important;
+}
+.select-HeSo-LoaiDiem .ant-select-arrow{
+    color: #FF7506 !important;
+}
+
+/*Css cho phần table */
+.header-Table-DuLieuLoaiDiem{
+
+    height: 30px;
+    line-height: 30px;
+}
+
+.HienThiDuLieuLoaiDiem{
+    height: 500px;
+    margin-top: 20px;
+}
+
+
+.HienThiDuLieuLoaiDiem thead{
+    background: linear-gradient(90deg, rgba(241,127,33,1) 0%, rgba(255,84,0,1) 100%) !important;
+    width: 100%;
+    border-radius: 10px 10px 0 0 !important;
+}
+.HienThiDuLieuLoaiDiem thead > tr > th{
+    background: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 700;
+    color:  white;
+    font-size: 13px !important;
+}
+
+.HienThiDuLieuLoaiDiem tbody > tr > td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.HienThiDuLieuLoaiDiem .ant-table-tbody > tr:nth-child(even){
+    background-color: #f2f3f6;
+}
+
+.HienThiDuLieuLoaiDiem .ant-pagination{
+    position: absolute;
+    right: 0;
+    top: 500px
+}
+.HienThiDuLieuLoaiDiem .ant-pagination .ant-pagination-item-link{
+    border: none !important;
+    font-size: 20px;
+    color: #373839;
+}
+
+.HienThiDuLieuLoaiDiem .ant-pagination-item-active{
+    background-color: #FF7506;
+    color: white !important;
+    border: none;
+    border-radius: 30px;
+}
+.HienThiDuLieuLoaiDiem .ant-pagination-item-active a{
+    color: white;
+    font-weight: 500;
+}
+
+.HienThiDuLieuLoaiDiems .ant-pagination-item{
+    border: none;
+}

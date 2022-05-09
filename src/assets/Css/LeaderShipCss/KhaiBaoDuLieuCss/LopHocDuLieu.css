@@ -1,0 +1,214 @@
+.DuLieuLopHoc{
+    height: 700px;
+    width: 1050px;
+}
+
+.header-DuLieuLopHoc{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.table-DuLieuLopHoc{
+    background-color: white;
+    width: 100%;
+    height: 640px;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    border-radius: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+/*Css cho header lop hoc*/
+.select-LopHoc-Khoi .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 55%;
+    height: 25px;
+}
+
+.select-LopHoc-Khoi .ant-select-selector{
+    border: 1px solid #373839 !important;
+    border-radius: 5px !important; 
+    height: 29px !important;
+    width: 100px !important;   
+}
+.select-LopHoc-Khoi .ant-select-single{
+    width: 97px !important;
+}
+.select-LopHoc-Khoi .ant-select-arrow{
+    color: #FF7506 !important;
+}
+
+.buttonPopover-LopHoc{
+    background: #FF7506 !important;
+    height: 40px; width: 130px;
+    line-height: 30px;
+    font-size: 15px; font-weight: 700;
+    color: white;
+    display: flex;
+}
+
+.buttonPopover-LopHoc .ant-popover-open{
+    background: #FF7506 !important;
+    height: 40px; width: 130px;
+    font-size: 15px; font-weight: 700;
+    color: white;
+    display: flex;
+}
+
+.buttonPopover-LopHoc:focus{
+    background: #FF7506 !important;
+    height: 40px; width: 130px;
+    font-size: 15px; font-weight: 700;
+    color: white;
+    display: flex;
+}
+
+.ant-popover-inner{
+    background: none !important;
+    box-shadow: none !important;
+}
+.ant-popover-arrow{
+    display: none !important;
+}
+
+.selectNamHoc-ThemDuLieuLopHoc .ant-select-selection-search{
+    border-right: 1px solid #373839 !important;
+    width: 64%;
+    height: 27px;
+}
+.selectNamHoc-ThemDuLieuLopHoc .ant-select-selector{
+    border: 1px solid #373839 !important;
+    border-radius: 5px !important; 
+    height: 30px !important;
+    width: 120px !important;   
+}
+.selectNamHoc-ThemDuLieuLopHoc .ant-select-single{
+    width: 120px !important;
+}
+.selectNamHoc-ThemDuLieuLopHoc .ant-select-arrow{
+    color: #FF7506 !important;
+}
+
+.selectKhoi-ThemDuLieuLopHoc .ant-select-selection-search{
+    width: 70%;
+    height: 27px;   
+}
+.selectKhoi-ThemDuLieuLopHoc .ant-select-selector{
+    margin-top: -5px;
+    background: #F2F2F2 !important;
+    border: none !important;
+    border-radius: 5px !important; 
+    height: 30px !important;
+    width: 150px !important;   
+}
+.selectKhoi-ThemDuLieuLopHoc .ant-select-single{
+    width: 150px !important;
+}
+.selectKhoi-ThemDuLieuLopHoc .ant-select-arrow{
+    color: #FF7506 !important;
+}
+.selectKhoi-ThemDuLieuLopHoc .ant-select-arrow .anticon-down{
+    margin-top: -10px;
+}
+
+.cacDuLieuDuocThem .ant-select-selection-search{
+    width: 70%;
+    height: 27px;   
+}
+.cacDuLieuDuocThem .ant-select-selector{
+    margin-top: -5px;
+    background: #F2F2F2 !important;
+    border: none !important;
+    border-radius: 5px !important; 
+    height: 30px !important;
+    width: 396px !important;   
+}
+.cacDuLieuDuocThem .ant-select-single{
+    width: 393  px !important;
+}
+.cacDuLieuDuocThem .ant-select-arrow{
+    color: #FF7506 !important;
+}
+.cacDuLieuDuocThem .ant-select-arrow .anticon-down{
+    margin-top: -5px;
+}
+
+.selectNienKhoa-DuLieuLopHoc .ant-select-selection-search{
+    width: 64%;
+    height: 25px;
+}
+.selectNienKhoa-DuLieuLopHoc .ant-select-selector{
+    border: 1px solid #a4a4a4  !important;
+    border-radius: 5px !important; 
+    height: 27px !important;
+    width: 120px !important;   
+}
+.selectNienKhoa-DuLieuLopHoc .ant-select-single{
+    width: 120px !important;
+}
+.selectNienKhoa-DuLieuLopHoc .ant-select-arrow{
+    color: #a4a4a4 !important;
+}
+
+
+
+/*Css cho phần table hiển thị dử liệu lớp học*/
+.header-HienThiDuLieuLopHoc{
+    line-height: 30px;
+    height: 30px;
+}
+
+.table-LopHocInfor{
+    height: 500px;
+    margin-top: 20px;
+}
+
+.table-LopHocInfor thead{
+    background: #FF7506;
+}
+
+.table-LopHocInfor thead > tr > th{
+    background: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    color:  white;
+    font-size: 13px !important;
+}
+
+.table-LopHocInfor tbody > tr > td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.table-LopHocInfor .ant-table-tbody > tr:nth-child(even){
+    background-color: #f2f3f6;
+}
+
+.table-LopHocInfor .ant-pagination{
+    position: absolute;
+    right: 0;
+    top: 500px
+}
+.table-LopHocInfor .ant-pagination .ant-pagination-item-link{
+    border: none !important;
+    font-size: 20px;
+    color: #373839;
+}
+
+.table-LopHocInfor .ant-pagination-item-active{
+    background-color: #FF7506;
+    color: white !important;
+    border: none;
+    border-radius: 30px;
+}
+.table-LopHocInfor .ant-pagination-item-active a{
+    color: white;
+    font-weight: 500;
+}
+
+.table-LopHocInfor .ant-pagination-item{
+    border: none;
+}

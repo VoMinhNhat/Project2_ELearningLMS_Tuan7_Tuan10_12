@@ -6,6 +6,10 @@ import { Select, Tabs } from 'antd';
 import React, { useState } from 'react';
 import { DuLieuNienKhoa } from './CacTabKhacNhau/DuLieuNienKhoa';
 import { DuLieuToBoMon } from './CacTabKhacNhau/DuLieuToBoMon';
+import { DuLieuKhoaKhoi } from './CacTabKhacNhau/DuLieuKhoaKhoi';
+import { DuLieuMonHoc } from './CacTabKhacNhau/DuLieuMonhoc';
+import { DuLieuLopHoc } from './CacTabKhacNhau/DuLieuLopHoc';
+import { DuLieuLoaiDiem } from './CacTabKhacNhau/DuLieuLoaiDiem';
 
 
 // Select chọn cấp
@@ -37,16 +41,16 @@ const TabsDuLieu = () => (
             <DuLieuToBoMon/>
         </TabPane>
         <TabPane tab="Khoa - Khối" key="3">
-            Khoa - Khối
+            <DuLieuKhoaKhoi/>
         </TabPane>
         <TabPane tab="Môn học" key="4">
-            Môn học
+            <DuLieuMonHoc/>
         </TabPane>
         <TabPane tab="Lớp học" key="5">
-            Lớp học
+            <DuLieuLopHoc/>
         </TabPane>
         <TabPane tab="Loại điểm" key="6">
-            Loại điểm
+            <DuLieuLoaiDiem/>
         </TabPane>
     </Tabs>
 );

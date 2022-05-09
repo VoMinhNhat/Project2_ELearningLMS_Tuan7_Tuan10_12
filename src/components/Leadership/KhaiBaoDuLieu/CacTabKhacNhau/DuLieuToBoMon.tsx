@@ -3,7 +3,7 @@ import '../../../../assets/Css/LeaderShipCss/KhaiBaoDuLieuCss/ToBoMonDuLieu.css'
 import React, { useState } from 'react';
 import { Modal, Button, Select, Table } from 'antd';
 
-import {AiFillPlusCircle, AiOutlineUnorderedList} from 'react-icons/ai';
+import {AiFillPlusCircle, AiOutlineUnorderedList, AiOutlinePlus} from 'react-icons/ai';
 import {BiSearch} from 'react-icons/bi';
 import {BsPencilSquare, BsTrash} from 'react-icons/bs';
 
@@ -27,7 +27,8 @@ const ThemDuLieuToBoMon = () => {
     return (
       <>
         <Button type="primary" onClick={showModal} style={{width: '130px', fontSize: '15px', fontWeight: '500'}}>
-          +   Thêm mới
+          <AiOutlinePlus style={{ fontSize: '20px', marginRight: '5px', float: 'left' }} />
+          Thêm mới
         </Button>
         <Modal title="Thêm Tổ - Bộ môn mới" width={650} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} okText={'Lưu'} cancelText={'Hủy'}>
             <div className='header-modal-ThemMoiToBoMon'>
@@ -314,6 +315,12 @@ export const DuLieuToBoMon = () =>{
 
                 <div className='table-HienThiDuLieuBoMon'>
                   <Table columns={columns} dataSource={data} style={{borderRadius: '10px 10px 0 0'}} pagination={{ pageSize: 8}}/>
+                </div>
+
+                <div style={{fontWeight: '500', position: 'absolute', top: '730px'}}>
+                  Hiển thị
+                  <input  style={{margin: '0 10px 0 10px', width: '40px', border: '1px solid #FF5400', height: '30px', outline: 'none', padding: '0 10px 0 10px'}}/>
+                  hàng trong mỗi trang
                 </div>
             </div>
         </div>
